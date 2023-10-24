@@ -7,7 +7,7 @@
  * @param input The input resource that you wish to fetch
  * @param init An object containing any custom settings that you want to apply to the request
  */
-export function fetchJsonFromURL<ResultObject>(
+export function fetchJson<ResultObject>(
     input : RequestInfo | URL,
     init?: RequestInit
 ) : Promise<ResultObject> {
