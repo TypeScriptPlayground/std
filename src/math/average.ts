@@ -1,5 +1,5 @@
 /**
- * This function calculates the average number of a number array.
+ * This function calculates the average value of a number array.
  * 
  * @function
  * @param list List of number elements
