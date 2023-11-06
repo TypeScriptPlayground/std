@@ -1,0 +1,3 @@
+import fetchJson from "./fetch_json.ts";
+
+export { fetchJson }

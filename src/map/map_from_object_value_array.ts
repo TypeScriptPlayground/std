@@ -17,7 +17,7 @@
  * @param object The object to convert into a map
  * @returns The converted map
  */
-export function mapFromObjectValueArray(object : Record<string, (string | number)[]>) : Map<string | number, string> {
+export default function mapFromObjectValueArray(object : Record<string, (string | number)[]>) : Map<string | number, string> {
     return Object.entries(object).reduce(
         (map, [key, values]) => {
           values.forEach((value) => map.set(value, key));
