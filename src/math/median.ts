@@ -5,7 +5,7 @@
  * @param array List of numbers
  * @returns The median value
  */
-export function median(array : number[]) : number {
+export default function median(array : number[]) : number {
     const sumOfArray = array.reduce(
         (
             previousValue,
@@ -25,7 +25,7 @@ export function median(array : number[]) : number {
     array.sort((a, b) => a - b);
     
     if (isOdd) {
-        return array[(array.length + 1) / 2];
+        return array[(array.length - 1) / 2];
     } 
     
     return (array[(array.length / 2) - 1] + array[array.length / 2]) / 2
