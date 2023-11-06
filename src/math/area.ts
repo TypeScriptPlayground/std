@@ -19,22 +19,22 @@ export default function area(coordinates : {x : number, y : number}[]) : number 
             ) - Math.min(
                 lastCoordinate.x,
                 currentCoordinate.x
-            ))
+            ));
         
-            const height = (Math.abs(lastCoordinate.y) + Math.abs(currentCoordinate.y)) / 2
+            const height = (Math.abs(lastCoordinate.y) + Math.abs(currentCoordinate.y)) / 2;
         
             const currentArea = widthOfTotalArea * height;
     
             if (lastCoordinate.x - currentCoordinate.x > 0) {
-                totalArea += currentArea
+                totalArea += currentArea;
             } else {
-                totalArea -= currentArea
+                totalArea -= currentArea;
             }
         
-            return currentCoordinate
+            return currentCoordinate;
         },
         coordinates[coordinates.length - 1]
-    )
+    );
 
     return totalArea;
 }
