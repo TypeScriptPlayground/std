@@ -53,5 +53,15 @@ Deno.test(
                 )
             }
         })
+
+        await test.step({
+            name: 'Array with negative numbers [-7, 2, 6, -13, 27]',
+            fn: () => {
+                assertEquals(
+                    median([-7, 2, 6, -13, 27]),
+                    2
+                )
+            }
+        })
     }
 )
