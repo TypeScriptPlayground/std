@@ -1,2 +1,1 @@
-# Template
-Template for TypeScript.
+# Standerd modules for TypeScript
