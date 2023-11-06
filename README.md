@@ -1,1 +1,1 @@
-# Standerd modules for TypeScript
+# Standard modules for TypeScript
