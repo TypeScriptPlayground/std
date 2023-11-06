@@ -23,7 +23,7 @@ export default function mapFromObjectValueArray(object : Record<string, (string 
           values.forEach((value) => map.set(value, key));
           return map;
         },
-        new Map<string | number, string>(),
+        new Map<string | number, string>()
     );
 }
 
