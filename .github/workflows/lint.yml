@@ -1,18 +1,18 @@
-name: Deno
+name: Run Linter
 
 on:
   push:
     branches: ["main"]
-  pull_request:
-    branches: ["main"]
+
   workflow_dispatch:
 
 permissions:
+  contents: read
   checks: write
 
 jobs:
-  test:
-    name: Deno Test
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
     env:
       deno-version: v1.x
@@ -25,15 +25,6 @@ jobs:
         uses: denoland/setup-deno@v1
         with:
           deno-version: ${{env.deno-version}}
-
-      - name: Run linter
+      
+      - name: Run Linter
         run: deno lint
-
-      - name: Run tests
-        if: success() || failure()
-        run: deno test -A --unstable --check --reload --doc --allow-none --junit-path="./report.xml"
-                         
-      - name: Report test      
-        uses: mikepenz/action-junit-report@v3.8.0
-        with:
-          report_paths: 'report.xml'
