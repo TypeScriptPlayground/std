@@ -1,3 +1,3 @@
-export default function parse() {
+export default function parse(args : string) {
     
 }
