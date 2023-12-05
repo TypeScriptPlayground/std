@@ -1,4 +1,4 @@
-export function getFileExtension(path : string) {
-  const matchEntension = /(?<=\.)[^.]+$/
-  return path.match(matchEntension)
+export default function getFileExtension(path : string) {
+  const matchExtension = /(?<=\.)[^.]+$/
+  return path.match(matchExtension)
 }
