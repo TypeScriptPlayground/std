@@ -1,4 +1,11 @@
-export default function getFileExtension(path : string) {
-  const matchExtension = /(?<=\.)[^.]+$/
-  return path.match(matchExtension)
+/**
+ * This function returns the file extension of an provided path. If the path does not contain a file extension,
+ * `undefined` is returned.
+ * 
+ * @param path Path to the file
+ * @returns File extension or undefined
+ */
+export default function getFileExtension(path : string) : string | undefined {
+  const matchExtension = /(?<=\.)[^\/\\]+$/
+  return path.match(matchExtension)?.[0]
 }
