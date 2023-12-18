@@ -1,6 +1,6 @@
 /**
- * This function returns the file extension of an provided path. If the path does not contain a file extension,
- * `undefined` is returned.
+ * This function returns the file extension without the `.` of an provided path. If the path does not contain a file
+ * extension, `undefined` is returned.
  * 
  * @param path Path to the file
  * @returns File extension or undefined
