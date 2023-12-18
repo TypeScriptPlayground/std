@@ -11,7 +11,7 @@ import { Yard } from "./imperial/yard.ts";
 import { Attometer } from "./metric/attometer.ts";
 import { Centimeter } from "./metric/centimeter.ts";
 import { Decimeter } from "./metric/decimeter.ts";
-import { Femtometer } from "./metric/fetometer.ts";
+import { Femtometer } from "./metric/femtometer.ts";
 import { Gigameter } from "./metric/gigameter.ts";
 import { Kilometer } from "./metric/kilometer.ts";
 import { Megameter } from "./metric/megameter.ts";
@@ -38,7 +38,7 @@ export interface Length {
         megameter : Megameter,
         gigameter : Gigameter,
         terameter : Terameter,
-        
+
         // imperial
         inch : Inch,
         foot : Foot,
