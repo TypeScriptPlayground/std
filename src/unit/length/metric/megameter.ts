@@ -1,0 +1,1 @@
+export type Megameter = () => number

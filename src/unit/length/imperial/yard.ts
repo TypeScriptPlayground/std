@@ -1,0 +1,1 @@
+export type Yard = () => number
