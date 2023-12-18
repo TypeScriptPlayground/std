@@ -5,7 +5,7 @@ Deno.test(
     'Parsing CLI string arguments.',
     (test) => {
         test.step({
-            name: 'Bool arguments (--argument)',
+            name: 'Long bool arguments (--argument)',
             fn: () => {
                 
             }
