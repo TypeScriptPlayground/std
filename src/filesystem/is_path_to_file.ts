@@ -1,4 +1,3 @@
-export default function isFile() {
+export default function isPathToFile() {
     
 }
-Deno.lstat(path)

@@ -1,5 +1,5 @@
 import { assertEquals } from "https://deno.land/std@0.203.0/assert/assert_equals.ts";
-import getFileExtension from "./get_file_extension.ts";
+import getFileExtensionFromPath from "./get_file_extension_from_path.ts";
 
 Deno.test(
     'Get file extension.',
@@ -8,7 +8,7 @@ Deno.test(
             name: 'Path to normal file',
             fn: () => {
                 assertEquals(
-                    getFileExtension('test/path/to/file.ts'),
+                    getFileExtensionFromPath('test/path/to/file.ts'),
                     'ts'
                 )
             }
@@ -17,7 +17,7 @@ Deno.test(
             name: 'Path to normal file with backslash (\\) path',
             fn: () => {
                 assertEquals(
-                    getFileExtension('test\\path\\to\\file.ts'),
+                    getFileExtensionFromPath('test\\path\\to\\file.ts'),
                     'ts'
                 )
             }
@@ -26,7 +26,7 @@ Deno.test(
             name: 'Path to directory',
             fn: () => {
                 assertEquals(
-                    getFileExtension('test/path/to'),
+                    getFileExtensionFromPath('test/path/to'),
                     undefined
                 )
             }
@@ -35,7 +35,7 @@ Deno.test(
             name: 'Path to directory with trailing slash (/)',
             fn: () => {
                 assertEquals(
-                    getFileExtension('test/path/to/'),
+                    getFileExtensionFromPath('test/path/to/'),
                     undefined
                 )
             }
@@ -44,7 +44,7 @@ Deno.test(
             name: 'Path to directory with trailing backslash (\\)',
             fn: () => {
                 assertEquals(
-                    getFileExtension('test/path/to\\'),
+                    getFileExtensionFromPath('test/path/to\\'),
                     undefined
                 )
             }
@@ -53,7 +53,7 @@ Deno.test(
             name: 'Path to normal file with special characters in path',
             fn: () => {
                 assertEquals(
-                    getFileExtension('test/path/with.dot/file.ts'),
+                    getFileExtensionFromPath('test/path/with.dot/file.ts'),
                     'ts'
                 )
             }
@@ -62,7 +62,7 @@ Deno.test(
             name: 'Path to directory with special characters in path',
             fn: () => {
                 assertEquals(
-                    getFileExtension('te$t/p4th/with.dot/'),
+                    getFileExtensionFromPath('te$t/p4th/with.dot/'),
                     undefined
                 )
             }

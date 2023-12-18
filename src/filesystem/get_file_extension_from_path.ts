@@ -5,7 +5,7 @@
  * @param path Path to the file
  * @returns File extension or undefined
  */
-export default function getFileExtension(path : string) : string | undefined {
+export default function getFileExtensionFromPath(path : string) : string | undefined {
   const matchExtension = /(?<=\.)[^\/\\]+$/
   return path.match(matchExtension)?.[0]
 }
