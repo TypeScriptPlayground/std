@@ -1,4 +1,5 @@
-import { assertEquals, assertIsError } from "https://deno.land/std@0.203.0/assert/assert_equals.ts";
+import { assertEquals } from "https://deno.land/std@0.203.0/assert/assert_equals.ts";
+import { assertIsError } from "https://deno.land/std@0.203.0/assert/assert_is_error.ts";
 import format from "./format.ts";
 
 Deno.test(
