@@ -1,4 +1,4 @@
-import { assertEquals } from "https://deno.land/std@0.203.0/assert/assert_equals.ts";
+import { assertEquals, assertIsError } from "https://deno.land/std@0.203.0/assert/assert_equals.ts";
 import format from "./format.ts";
 
 Deno.test(
@@ -17,9 +17,9 @@ Deno.test(
             }
         })
         await test.step({
-            name: 'Object does not exist.',
+            name: 'Object does not exist. Throw reference error.',
             fn: () => {
-                assertEquals(
+                assertIsError(
                     format(
                         'Test, hello {{keyDoesNotExist}}',
                         {person: 'User'}
