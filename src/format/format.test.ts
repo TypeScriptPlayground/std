@@ -20,11 +20,11 @@ Deno.test(
             name: 'Object does not exist.',
             fn: () => {
                 assertEquals(
-                    instanceof format(
+                    format(
                         'Test, hello {{keyDoesNotExist}}',
                         {person: 'User'}
                     ),
-                    instanceof new ReferenceError();
+                    new ReferenceError();
                 )
             }
         })
