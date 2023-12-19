@@ -25,7 +25,7 @@ Deno.test(
                         'Test, hello {{keyDoesNotExist}}',
                         {person: 'User'}
                     ),
-                    new ReferenceError()
+                    ReferenceError
                 )
             }
         })
