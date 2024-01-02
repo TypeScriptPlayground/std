@@ -44,5 +44,18 @@ Deno.test(
                 )
             }
         })
+
+        await test.step({
+            name: 'Multiple decimal places (default Math.round)',
+            fn: () => {
+                assertEquals(
+                    toFixed(
+                        100.6235,
+                        3
+                    ),
+                    100.624
+                )
+            }
+        })
     }
 )
