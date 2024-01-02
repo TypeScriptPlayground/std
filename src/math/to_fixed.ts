@@ -4,5 +4,6 @@ export default function toFixed(
     precision : number,
     handleTrailingDecimalPlaces : (value : number) => number = Math.round
 ) {
-    return (handleTrailingDecimalPlaces(value * precision)) / precision;
+    const decimalPlaces = Math.pow(10, precision)
+    return (handleTrailingDecimalPlaces(value * decimalPlaces)) / decimalPlaces;
 }
