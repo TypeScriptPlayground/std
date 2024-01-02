@@ -16,5 +16,33 @@ Deno.test(
                 )
             }
         })
+
+        await test.step({
+            name: 'One decimal place (Math.floor)',
+            fn: () => {
+                assertEquals(
+                    toFixed(
+                        100.6735,
+                        1,
+                        Math.floor
+                    ),
+                    100.6
+                )
+            }
+        })
+
+        await test.step({
+            name: 'One decimal place (Math.ceil)',
+            fn: () => {
+                assertEquals(
+                    toFixed(
+                        100.6235,
+                        1,
+                        Math.ceil
+                    ),
+                    100.7
+                )
+            }
+        })
     }
 )
