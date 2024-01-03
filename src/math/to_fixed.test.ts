@@ -2,10 +2,10 @@ import { assertEquals } from 'https://deno.land/std@0.203.0/assert/assert_equals
 import toFixed from "./to_fixed.ts";
 
 Deno.test(
-    'Trim number decimal places',
+    'Trim number decimal places.',
     async (test) => {
         await test.step({
-            name: 'One decimal place (default Math.round)',
+            name: 'One decimal place (default Math.round).',
             fn: () => {
                 assertEquals(
                     toFixed(
@@ -18,7 +18,7 @@ Deno.test(
         })
 
         await test.step({
-            name: 'One decimal place (Math.floor)',
+            name: 'One decimal place (Math.floor).',
             fn: () => {
                 assertEquals(
                     toFixed(
@@ -32,7 +32,7 @@ Deno.test(
         })
 
         await test.step({
-            name: 'One decimal place (Math.ceil)',
+            name: 'One decimal place (Math.ceil).',
             fn: () => {
                 assertEquals(
                     toFixed(
@@ -46,7 +46,7 @@ Deno.test(
         })
 
         await test.step({
-            name: 'Multiple decimal places (default Math.round)',
+            name: 'Multiple decimal places (default Math.round).',
             fn: () => {
                 assertEquals(
                     toFixed(

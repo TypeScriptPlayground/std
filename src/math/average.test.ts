@@ -2,7 +2,7 @@ import { assertEquals } from 'https://deno.land/std@0.203.0/assert/assert_equals
 import average from "./average.ts"
 
 Deno.test(
-    'Calculate average value of number array',
+    'Calculate average value of number array.',
     async (test) => {
         await test.step({
             name: 'Empty array []',

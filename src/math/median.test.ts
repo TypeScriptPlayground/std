@@ -2,7 +2,7 @@ import { assertEquals } from 'https://deno.land/std@0.203.0/assert/assert_equals
 import median from "./median.ts"
 
 Deno.test(
-    'Calculate median value of number array',
+    'Calculate median value of number array.',
     async (test) => {
         await test.step({
             name: 'Empty array []',
