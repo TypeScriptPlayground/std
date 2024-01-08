@@ -9,11 +9,19 @@ export default class Logger {
 
     }
 
+    public info() {
+
+    }
+
     public warn() {
 
     }
 
     public error() {
 
+    }
+
+    public file() {
+        
     }
 }
