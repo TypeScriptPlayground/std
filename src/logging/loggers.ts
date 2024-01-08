@@ -7,6 +7,9 @@ export default interface Loggers {
     warn : (data : any[]) => void,
     // deno-lint-ignore no-explicit-any
     error : (data : any[]) => void,
-    // deno-lint-ignore no-explicit-any
-    file : (data : any[]) => void
+    file : (
+        path : string,
+        // deno-lint-ignore no-explicit-any
+        data : any[]
+    ) => void
 }
