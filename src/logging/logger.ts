@@ -1,19 +1,16 @@
-import Loggers from "./loggers.ts";
-
 export default class Logger {
-    constructor(loggers : Loggers = {
-        log: console.log,
-        info: console.info,
-        warn: console.warn,
-        error: console.error,
-        file:
-    }) {
-
+    private logLogger : (...data : any[]) => void
+    constructor(loggers : any) {
+        this.logLogger = loggers.log ?? console.log
+        this.infoLogger = loggers.info ?? console.info
+        this.warnLogger = loggers.warn ?? console.warn
+        this.errorLogger = loggers.error ?? console.error
+        this.fileLogger = loggers.file
     }
 
     // deno-lint-ignore no-explicit-any
     public log(...data : any[]) {
-
+        this.logLogger(data);
     }
 
     // deno-lint-ignore no-explicit-any
