@@ -1,5 +1,7 @@
+import Loggers from "./loggers.ts";
+
 export default class Logger {
-    constructor(loggers : ) {
+    constructor(loggers : Loggers) {
 
     }
 
