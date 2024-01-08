@@ -1,6 +1,6 @@
 export default class Logger {
-    constructor() {
-        
+    constructor(loggers : ) {
+
     }
 
     public log() {
