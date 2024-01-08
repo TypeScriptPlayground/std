@@ -5,23 +5,28 @@ export default class Logger {
 
     }
 
-    public log(data : any[]) {
+    // deno-lint-ignore no-explicit-any
+    public log(...data : any[]) {
 
     }
 
-    public info() {
+    // deno-lint-ignore no-explicit-any
+    public info(...data : any[]) {
 
     }
 
-    public warn() {
+    // deno-lint-ignore no-explicit-any
+    public warn(...data : any[]) {
 
     }
 
-    public error() {
+    // deno-lint-ignore no-explicit-any
+    public error(...data : any[]) {
 
     }
 
-    public file() {
+    // deno-lint-ignore no-explicit-any
+    public file(...data : any[]) {
         
     }
 }
