@@ -5,7 +5,7 @@ export default class Logger {
 
     }
 
-    public log() {
+    public log(data : any[]) {
 
     }
 
