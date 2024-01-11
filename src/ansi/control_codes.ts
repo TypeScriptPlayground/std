@@ -70,9 +70,10 @@ const controlCodes = {
     US: '\x1F',
 } as const;
 
+export default controlCodes
+
 /**
  * This type gets generated from the values of {@linkcode controlCodes}.
  */
 export type ControlCode = TypeValuesFromObject<typeof controlCodes>
 
-export default controlCodes
