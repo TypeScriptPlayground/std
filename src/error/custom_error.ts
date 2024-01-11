@@ -8,7 +8,7 @@
  * @param message The custom error message
  * @returns The custom error
  */
-export class CustomError extends Error {
+export default class CustomError extends Error {
   constructor(message : string) {
     super(message);
     Object.setPrototypeOf( this, new.target.prototype );
