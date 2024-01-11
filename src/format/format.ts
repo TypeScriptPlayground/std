@@ -12,7 +12,7 @@
  * @param formatArgs An object with the corresponding keys matching the ones in the string
  * @returns The formatted string
  */
-export default function format(
+export default function formatString(
     string : string,
     formatArgs : Record<string, string | number>
 ) : string {
