@@ -78,10 +78,10 @@ const c0Controls = {
 
 } as const;
 
-export default c0Controls
+export default c0Controls;
 
 /**
  * This type gets generated from the values of {@linkcode c0Controls}.
  */
-export type C0Control = TypeValuesFromObject<typeof c0Controls>
+export type C0Control = TypeValuesFromObject<typeof c0Controls>;
 
