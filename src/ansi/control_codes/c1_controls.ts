@@ -3,7 +3,8 @@ import { TypeValuesFromObject } from "../../type/mod.ts";
 /**
  * This object contains all C1 ANSI control codes.
  * 
- * [Reference](https://en.wikipedia.org/wiki/C0_and_C1_control_codes#C1_controls)
+ * [Wikipedia](https://en.wikipedia.org/wiki/C0_and_C1_control_codes#C1_controls) |
+ * [vt100](https://vt100.net/docs/vt510-rm/chapter4.html)
  */
 const c1Controls = {
     /** Padding Character (`0x80`) */
