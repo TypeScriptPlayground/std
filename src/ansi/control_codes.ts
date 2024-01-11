@@ -4,69 +4,69 @@ import { TypeValuesFromObject } from "../type/mod.ts";
  * This object contains all ANSI control codes (`0x00`-`0x1F`)
  */
 const controlCodes = {
-    /** Null */
+    /** Null (`\x00`) */
     NUL: '\x00',
-    /** Start of heading */
+    /** Start of heading (`\x01`) */
     SOH: '\x01',
-    /** Start of text */
+    /** Start of text (`\x02`) */
     STX: '\x02',
-    /** End of text */
+    /** End of text (`\x03`) */
     ETX: '\x03',
-    /** End of transmission */
+    /** End of transmission (`\x04`) */
     EOT: '\x04',
-    /** Enquiry  */
+    /** Enquiry  (`\x05`) */
     ENQ: '\x05',
-    /** Acknowledge  */
+    /** Acknowledge  (`\x06`) */
     AOK: '\x06',
-    /** Bell */
+    /** Bell (`\x07`) */
     BEL: '\x07',
-    /** Backspace */
+    /** Backspace (`\x08`) */
     BS: '\x08',
-    /** Horizontal tab */
+    /** Horizontal tab (`\x09`) */
     TAB: '\x09',
-    /** NL line feed, new Line */
+    /** NL line feed, new Line (`\x0A`) */
     LF: '\x0A',
-    /** Vertical tab */
+    /** Vertical tab (`\x0B`) */
     VT: '\x0B',
-    /** NP form feed, new page */
+    /** NP form feed, new page (`\x0C`) */
     FF: '\x0C',
-    /** Carriage return */
+    /** Carriage return (`\x0D`) */
     CR: '\x0D',
-    /** Shift out */
+    /** Shift out (`\x0E`) */
     SO: '\x0E',
-    /** Shift in */
+    /** Shift in (`\x0F`) */
     SI: '\x0F',
-    /** Data link escape */
+    /** Data link escape (`\x10`) */
     DLE: '\x10',
-    /** Device control I */
+    /** Device control I (`\x11`) */
     DC1: '\x11',
-    /** Device control 2 */
+    /** Device control 2 (`\x12`) */
     DC2: '\x12',
-    /** Device control 3 */
+    /** Device control 3 (`\x13`) */
     DC3: '\x13',
-    /** Device control 4 */
+    /** Device control 4 (`\x14`) */
     DC4: '\x14',
-    /** Negative acknowledge */
+    /** Negative acknowledge (`\x15`) */
     NAK: '\x15',
-    /** Synchronous idle */
+    /** Synchronous idle (`\x16`) */
     SYN: '\x16',
-    /** End of trans. block */
+    /** End of trans. block (`\x17`) */
     ETB: '\x17',
-    /** Cancel */
+    /** Cancel (`\x18`) */
     CAN: '\x18',
-    /** End of medium */
+    /** End of medium (`\x19`) */
     EM: '\x19',
-    /** Substitute */
+    /** Substitute (`\x1A`) */
     SUB: '\x1A',
-    /** Escape */
+    /** Escape (`\x1B`) */
     ESC: '\x1B',
-    /** File separator */
+    /** File separator (`\x1C`) */
     FS: '\x1C',
-    /** Group separator */
+    /** Group separator (`\x1D`) */
     GS: '\x1D',
-    /** Record separator */
+    /** Record separator (`\x1E`) */
     RS: '\x1E',
-    /** Unit separator */
+    /** Unit separator (`\x1F`) */
     US: '\x1F',
 } as const;
 
