@@ -1,69 +1,72 @@
 import { TypeValuesFromObject } from "../type/mod.ts";
 
+/**
+ * This object contains all ANSI control codes (`0x00`-`0x1F`)
+ */
 const controlCodes = {
     /** Null */
     NUL: '\x00',
-    /** start of heading */
+    /** Start of heading */
     SOH: '\x01',
-    /** start of text */
+    /** Start of text */
     STX: '\x02',
-    /** end of text */
+    /** End of text */
     ETX: '\x03',
-    /** end of transmission */
+    /** End of transmission */
     EOT: '\x04',
-    /** enquiry  */
+    /** Enquiry  */
     ENQ: '\x05',
-    /** acknowledge  */
+    /** Acknowledge  */
     AOK: '\x06',
-    /** bell */
+    /** Bell */
     BEL: '\x07',
-    /** backspace */
+    /** Backspace */
     BS: '\x08',
-    /** horizontal tab */
+    /** Horizontal tab */
     TAB: '\x09',
     /** NL line feed, new Line */
     LF: '\x0A',
-    /** vertical tab */
+    /** Vertical tab */
     VT: '\x0B',
     /** NP form feed, new page */
     FF: '\x0C',
-    /** carriage return */
+    /** Carriage return */
     CR: '\x0D',
-    /** shift out */
+    /** Shift out */
     SO: '\x0E',
-    /** shift in */
+    /** Shift in */
     SI: '\x0F',
-    /** data link escape */
+    /** Data link escape */
     DLE: '\x10',
-    /** device control I */
+    /** Device control I */
     DC1: '\x11',
-    /** device control 2 */
+    /** Device control 2 */
     DC2: '\x12',
-    /** device control 3 */
+    /** Device control 3 */
     DC3: '\x13',
-    /** device control 4 */
+    /** Device control 4 */
     DC4: '\x14',
-    /** negative acknowledge */
+    /** Negative acknowledge */
     NAK: '\x15',
-    /** synchronous idle */
+    /** Synchronous idle */
     SYN: '\x16',
-    /** end of trans. block */
+    /** End of trans. block */
     ETB: '\x17',
-    /** cancel */
+    /** Cancel */
     CAN: '\x18',
-    /** end of medium */
+    /** End of medium */
     EM: '\x19',
-    /** substitute */
+    /** Substitute */
     SUB: '\x1A',
-    /** escape */
+    /** Escape */
     ESC: '\x1B',
-    /** file separator */
+    /** File separator */
     FS: '\x1C',
-    /** group separator */
+    /** Group separator */
     GS: '\x1D',
-    /** record separator */
+    /** Record separator */
     RS: '\x1E',
-    /** unit separator */
+    /** Unit separator */
     US: '\x1F',
 } as const;
 
