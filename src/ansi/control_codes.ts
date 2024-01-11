@@ -1,7 +1,9 @@
 import { TypeValuesFromObject } from "../type/mod.ts";
 
 /**
- * This object contains all ANSI control codes (`0x00`-`0x1F`)
+ * This object contains all ANSI control codes.
+ * 
+ * [Reference](https://en.wikipedia.org/wiki/C0_and_C1_control_codes)
  */
 const controlCodes = {
     /** Null (`0x00`) */
@@ -68,6 +70,11 @@ const controlCodes = {
     RS: '\x1E',
     /** Unit separator (`0x1F`) */
     US: '\x1F',
+    /** Space (`0x20`) */
+    SP: '\x20',
+    /** Delete (`0x7F`) */
+    DEL: '\x7F',
+
 } as const;
 
 export default controlCodes
