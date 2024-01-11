@@ -1,6 +1,6 @@
 import { assertEquals } from "https://deno.land/std@0.203.0/assert/assert_equals.ts";
 import { assertIsError } from "https://deno.land/std@0.203.0/assert/assert_is_error.ts";
-import formatString from "./format.ts";
+import formatString from "./format_string.ts";
 
 Deno.test(
     'Format string.',
