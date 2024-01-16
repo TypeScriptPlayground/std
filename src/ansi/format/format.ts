@@ -1,11 +1,11 @@
 import { TypeValuesFromObject } from "../../type/mod.ts";
 
 /**
- * This object contains all 8-Bit color codes.
+ * This object contains all format codes.
  * 
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters)
  */
-const formatControls = {
+const format = {
     RESET: '0',
     FONT_WEIGHT_BOLD: '1',
     FONT_WEIGHT_DIM: '2',
@@ -66,9 +66,9 @@ const formatControls = {
     // BRIGHT_BACKGROUND_COLOR: 100 - 107
 } as const;
 
-export default formatControls;
+export default format;
 
 /**
  * This type gets generated from the values of {@linkcode bit4Colors}.
  */
-export type Bit8Color = TypeValuesFromObject<typeof formatControls>;
+export type Bit8Color = TypeValuesFromObject<typeof format>;
