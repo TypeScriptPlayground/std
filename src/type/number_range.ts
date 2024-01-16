@@ -9,10 +9,12 @@ type Enumerate<
     ]
 >
 
-export type Range<
+type NumberRange<
     Start extends number,
     End extends number
 > = Exclude<
     Enumerate<End> | End,
     Enumerate<Start>
 >
+
+export default NumberRange
