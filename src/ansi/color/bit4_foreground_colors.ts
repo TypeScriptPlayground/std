@@ -1,4 +1,4 @@
-import { TypeKeysFromObject } from "../../type/mod.ts";
+import { TypeValuesFromObject } from "../../type/mod.ts";
 
 /**
  * This object contains all 4-Bit foreground color codes.
@@ -21,4 +21,4 @@ export default bit4ForegroundColors;
 /**
  * This type gets generated from the values of {@linkcode bit4ForegroundColors}.
  */
-export type Bit4ForegroundColor = TypeKeysFromObject<typeof bit4ForegroundColors>;
+export type Bit4ForegroundColor = TypeValuesFromObject<typeof bit4ForegroundColors>;
