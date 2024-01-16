@@ -5,7 +5,7 @@ import { TypeValuesFromObject } from "../../type/mod.ts";
  * 
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters)
  */
-const format = {
+const formats = {
     RESET: '0',
     FONT_WEIGHT_BOLD: '1',
     FONT_WEIGHT_DIM: '2',
@@ -60,9 +60,9 @@ const format = {
     // BRIGHT_BACKGROUND_COLOR: 100 - 107
 } as const;
 
-export default format;
+export default formats;
 
 /**
- * This type gets generated from the values of {@linkcode bit4Colors}.
+ * This type gets generated from the values of {@linkcode formats}.
  */
-export type Bit8Color = TypeValuesFromObject<typeof format>;
+export type Format = TypeValuesFromObject<typeof formats>;
