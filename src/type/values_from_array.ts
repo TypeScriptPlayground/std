@@ -3,6 +3,6 @@
  * 
  * @template Type The type of the array from which to create a new type.
  */
-type TypeValuesFromArray<Type extends readonly unknown[]> = Type[number];
+type ValuesFromArray<Type extends readonly unknown[]> = Type[number];
 
-export default TypeValuesFromArray
+export default ValuesFromArray

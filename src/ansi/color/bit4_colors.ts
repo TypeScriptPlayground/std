@@ -1,4 +1,4 @@
-import { TypeValuesFromObject } from "../../type/mod.ts";
+import { ValuesFromObject } from "../../type/mod.ts";
 
 /**
  * This object contains all 4-Bit color codes.
@@ -45,4 +45,4 @@ export default bit4Colors;
 /**
  * This type gets generated from the values of {@linkcode bit4Colors}.
  */
-export type Bit4Color = TypeValuesFromObject<typeof bit4Colors>;
+export type Bit4Color = ValuesFromObject<typeof bit4Colors>;

@@ -1,4 +1,4 @@
-import { TypeValuesFromObject } from "../../type/mod.ts";
+import { ValuesFromObject } from "../../type/mod.ts";
 
 /**
  * This object contains all 8-Bit color codes.
@@ -255,4 +255,4 @@ export default bit8Colors;
 /**
  * This type gets generated from the values of {@linkcode bit4Colors}.
  */
-export type Bit8Color = TypeValuesFromObject<typeof bit8Colors>;
+export type Bit8Color = ValuesFromObject<typeof bit8Colors>;

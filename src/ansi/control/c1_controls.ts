@@ -1,4 +1,4 @@
-import { TypeValuesFromObject } from "../../type/mod.ts";
+import { ValuesFromObject } from "../../type/mod.ts";
 
 /**
  * This object contains all C1 ANSI control codes.
@@ -79,5 +79,5 @@ export default c1Controls;
 /**
  * This type gets generated from the values of {@linkcode c1Controls}.
  */
-export type C1Control = TypeValuesFromObject<typeof c1Controls>;
+export type C1Control = ValuesFromObject<typeof c1Controls>;
 

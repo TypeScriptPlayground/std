@@ -3,6 +3,6 @@
  * 
  * @template Type The type of the object from which to create a new type.
  */
-type TypeKeysFromObject<Type extends unknown> = keyof Type;
+type KeysFromObject<Type extends unknown> = keyof Type;
 
-export default TypeKeysFromObject
+export default KeysFromObject

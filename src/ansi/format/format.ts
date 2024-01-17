@@ -1,4 +1,4 @@
-import { TypeValuesFromObject } from "../../type/mod.ts";
+import { ValuesFromObject } from "../../type/mod.ts";
 
 /**
  * This object contains all format codes.
@@ -65,4 +65,4 @@ export default formats;
 /**
  * This type gets generated from the values of {@linkcode formats}.
  */
-export type Format = TypeValuesFromObject<typeof formats>;
+export type Format = ValuesFromObject<typeof formats>;

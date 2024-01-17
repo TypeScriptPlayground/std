@@ -1,4 +1,4 @@
-import { TypeValuesFromObject } from "../../type/mod.ts";
+import { ValuesFromObject } from "../../type/mod.ts";
 
 /**
  * This object contains all C0 ANSI control codes.
@@ -83,5 +83,5 @@ export default c0Controls;
 /**
  * This type gets generated from the values of {@linkcode c0Controls}.
  */
-export type C0Control = TypeValuesFromObject<typeof c0Controls>;
+export type C0Control = ValuesFromObject<typeof c0Controls>;
 
