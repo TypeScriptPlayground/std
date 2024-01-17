@@ -3,6 +3,8 @@ import { ValuesFromObject } from "../../type/mod.ts";
 /**
  * This object contains all format codes.
  * 
+ * Use the control sequence `CSI <formats.FORMAT> m`, named Select Graphic Rendition (SGR), to set display attributes.
+ * 
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters)
  */
 const formats = {
