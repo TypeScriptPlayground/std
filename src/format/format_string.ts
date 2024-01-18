@@ -4,7 +4,7 @@
  * 
  * @example
  * ```ts
- * console.log(format('Template {{name}}', {name: 'Hello'}));
+ * console.log(formatString('Template {{name}}', {name: 'Hello'}));
  * // Template Hello
  * ```
  * 
