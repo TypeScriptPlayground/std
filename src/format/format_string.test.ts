@@ -6,7 +6,7 @@ Deno.test(
     'Format string.',
     async (test) => {
         await test.step({
-            name: 'Normal template string.',
+            name: 'Normal template string. ("{{person}}")',
             fn: () => {
                 assertEquals(
                     formatString(
@@ -19,7 +19,7 @@ Deno.test(
         })
 
         await test.step({
-            name: 'Special template string. ("\\")',
+            name: 'Special template string. ("\\{{person}}")',
             fn: () => {
                 assertEquals(
                     formatString(
@@ -32,7 +32,7 @@ Deno.test(
         })
         
         await test.step({
-            name: 'Special template string. ("\\\\")',
+            name: 'Special template string. ("\\\\{{person}}")',
             fn: () => {
                 assertEquals(
                     formatString(
@@ -40,6 +40,32 @@ Deno.test(
                         {person: 'User'}
                     ),
                     'Test, hello \\\\User'
+                )
+            }
+        })
+
+        await test.step({
+            name: 'Special template string. ("{\\\\{person}}")',
+            fn: () => {
+                assertEquals(
+                    formatString(
+                        'Test, hello {\\\\{person}}',
+                        {person: 'User'}
+                    ),
+                    'Test, hello {\\\\{person}}'
+                )
+            }
+        })
+        
+        await test.step({
+            name: 'Special template string. ("{{person\\}}")',
+            fn: () => {
+                assertEquals(
+                    formatString(
+                        'Test, hello {{person\\}}',
+                        {person: 'User'}
+                    ),
+                    'Test, hello {{person\\}}'
                 )
             }
         })
