@@ -1,5 +1,5 @@
 import { assertEquals } from "https://deno.land/std@0.203.0/assert/assert_equals.ts";
-import { assertIsError } from "https://deno.land/std@0.203.0/assert/assert_is_error.ts";
+import { assertThrows } from "https://deno.land/std@0.203.0/assert/assert_throws.ts";
 import formatString from "./format_string.ts";
 
 Deno.test(
@@ -19,14 +19,27 @@ Deno.test(
         })
 
         await test.step({
-            name: 'Special template string.',
+            name: 'Special template string. ("\\")',
+            fn: () => {
+                assertEquals(
+                    formatString(
+                        'Test, hello \\{{person}}',
+                        {person: 'User'}
+                    ),
+                    'Test, hello \\{{person}}'
+                )
+            }
+        })
+        
+        await test.step({
+            name: 'Special template string. ("\\\\")',
             fn: () => {
                 assertEquals(
                     formatString(
                         'Test, hello \\\\{{person}}',
                         {person: 'User'}
                     ),
-                    'Test, hello User'
+                    'Test, hello \\\\User'
                 )
             }
         })
@@ -34,8 +47,8 @@ Deno.test(
         await test.step({
             name: 'Object does not exist. Throw reference error.',
             fn: () => {
-                assertIsError(
-                    formatString(
+                assertThrows(
+                    () => formatString(
                         'Test, hello {{keyDoesNotExist}}',
                         {person: 'User'}
                     ),
