@@ -16,7 +16,7 @@ export default function formatString(
     string : string,
     formatArgs : Record<string, string | number>
 ) : string {
-    return string.replace(/(?<!\\)\{\{\s*(\w+)\s*}}/gm, (_, formatKey : string) : string => {
+    return string.replace(/(?<=(?:^|[^\\])(\\\\)*)\{\{\s*(\w+)\s*}}/gm, (_, formatKey : string) : string => {
         if (!Object.hasOwn(formatArgs, formatKey)) {
             throw new ReferenceError(`Format key '${formatKey}' does not exist on the provided format object`);
         }
