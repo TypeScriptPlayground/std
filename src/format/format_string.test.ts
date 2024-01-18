@@ -17,6 +17,19 @@ Deno.test(
                 )
             }
         })
+
+        await test.step({
+            name: 'Special template string.',
+            fn: () => {
+                assertEquals(
+                    formatString(
+                        'Test, hello \\\\{{person}}',
+                        {person: 'User'}
+                    ),
+                    'Test, hello User'
+                )
+            }
+        })
         
         await test.step({
             name: 'Object does not exist. Throw reference error.',
