@@ -9,8 +9,9 @@ Deno.test(
       name: 'Invalid pattern',
       fn: () => {
         assertThrows(
-          () => parseString('/abc(/'),
-          SyntaxError
+          () => parseString('/(/'),
+          SyntaxError,
+          'Invalid regular expression: /(/: Unterminated group'
         )
       }
     })
