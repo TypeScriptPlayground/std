@@ -18,5 +18,3 @@ export default function parseString(input : string) : RegExp {
     const pattern = input.replace(new RegExp('^/(.*)/.*$'), (_, pattern) => pattern);
     return new RegExp(pattern, flags);
 }
-
-console.log(parseString('/ab.c/gm'));
