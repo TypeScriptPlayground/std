@@ -1,8 +1,8 @@
-import BinaryBit from './binary_bit.ts';
+import BinaryDigit from './binary_digit.ts';
 
 /**
  * This type represents a byte.
  */
-type BinaryByte = `${BinaryBit}${BinaryBit}${BinaryBit}${BinaryBit}${BinaryBit}${BinaryBit}${BinaryBit}${BinaryBit}`;
+type BinaryByte = `${BinaryDigit}${BinaryDigit}${BinaryDigit}${BinaryDigit}${BinaryDigit}${BinaryDigit}${BinaryDigit}${BinaryDigit}`;
 
 export default BinaryByte;
