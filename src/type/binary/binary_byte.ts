@@ -1,8 +1,8 @@
-import BinaryDigit from './binary_digit.ts';
+import DualDigit from './dual_digit.ts';
 
 /**
  * This type represents a byte.
  */
-type BinaryByte = `${BinaryDigit}${BinaryDigit}${BinaryDigit}${BinaryDigit}${BinaryDigit}${BinaryDigit}${BinaryDigit}${BinaryDigit}`;
+type DualByte = `${DualDigit}${DualDigit}${DualDigit}${DualDigit}${DualDigit}${DualDigit}${DualDigit}${DualDigit}`;
 
-export default BinaryByte;
+export default DualByte;
