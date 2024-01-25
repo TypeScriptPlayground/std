@@ -1,4 +1,6 @@
 /**
  * This type represents a bit.
  */
-export type BinaryBit = 0 | 1;
+type BinaryBit = 0 | 1;
+
+export default BinaryBit;
