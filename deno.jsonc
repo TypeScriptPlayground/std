@@ -9,5 +9,23 @@
         "include": [
             "**/*.test.ts"
         ]
+    },
+    "lint": {
+        "rules": {
+            "tags": [
+                "recommended"
+            ],
+            "include": [
+                "camelcase",
+                "default-param-last",
+                "eqeqeq",
+                "explicit-function-return-type",
+                "explicit-module-boundary-types",
+                "guard-for-in",
+                "no-eval",
+                "no-sparse-arrays",
+                "prefer-ascii"
+            ]
+        }
     }
 }
