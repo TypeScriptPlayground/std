@@ -5,11 +5,11 @@ Deno.test(
     'Split path.',
     async (test) => {
         await test.step({
-            name: 'Path to file with separator "/".',
+            name: 'Path to file.',
             fn: () => {
                 assertEquals(
                     normalizePath(
-                        'this///////is/a//very/messed//./up//.//long/../path//to///a//../../special/../file///.///',
+                        'this/\\///\\\\is/a//very/messed\\/./up//./\\long/../path//to/\\/a//../..\\special/../file///.///',
                         '/'
                     ),
                     'this/is/a/very/messed/up/path/file/'
