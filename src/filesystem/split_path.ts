@@ -5,7 +5,7 @@
  * @param separator The separator used for the path
  * @returns The separated path
  */
-export default function split(
+export default function splitPath(
     path : string,
     separator : string | RegExp
 ) : string[] {
