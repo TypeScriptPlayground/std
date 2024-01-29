@@ -25,6 +25,9 @@
                 "no-eval",
                 "no-sparse-arrays",
                 "prefer-ascii"
+            ],
+            "exclude": [
+                "no-inferrable-types"
             ]
         }
     }
