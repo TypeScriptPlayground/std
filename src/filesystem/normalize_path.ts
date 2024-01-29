@@ -16,13 +16,10 @@ export default function normalizePath(
     separator : '\\' | '\/',
     maxIterations : number = 200
 ) : string {
-    const matchStackedSeparator = new RegExp(`(?<=\\${separator})\\${separator}\\${separator}`, 'gm');
-    const matchDoubleSeparator = new RegExp(`\\${separator}\\${separator}`, 'gm');
-    const matchCurrentDirectory = new RegExp(`(?<!\.)\.\\${separator}`, 'gm');
-    const matchParentDirectory = new RegExp(`([^\\${separator}]+\\${separator})\.\.\\${separator}`, 'gm');
-    
-    console.log(path);
-    
+    const matchStackedSeparator = /(?<=[\/\\])[\/\\][\/\\]/gm;
+    const matchDoubleSeparator = /[\/\\][\/\\]/gm;
+    const matchCurrentDirectory = /(?<!\.)\.[\/\\]/gm;
+    const matchParentDirectory = /([^\/\\]+[\/\\])\.\.[\/\\]/gm;
 
     path = path.replace(
         matchStackedSeparator,
@@ -35,17 +32,12 @@ export default function normalizePath(
         ''
     );
 
-    console.log(path);
-    
-
     for (
         let replaceIteration = 0;
         path.match(matchParentDirectory) && replaceIteration < maxIterations;
         replaceIteration++
     ) {
         path = path.replace(matchParentDirectory, '')
-        
-        console.log(path);
     }
 
     return path;
