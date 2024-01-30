@@ -5,5 +5,5 @@
  * @returns The boolean value of the string
  */
 export default function parseBoolean(booleanString : string) : boolean {
-    return booleanString === 'true' || booleanString === 'True';
+    return booleanString.toLowerCase() === 'true';
 }
