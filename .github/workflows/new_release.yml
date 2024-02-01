@@ -13,17 +13,14 @@ permissions:
 
 jobs:
   release:
-    name: 'Draft new release (latest: ${{inputs.version}})'
+    name: 'Draft new release (${{inputs.version}})'
     runs-on: ubuntu-latest
 
     steps:
       - name: 'Setup Repository (${{github.event.repository.name}})'
         uses: actions/checkout@v4
       
-      - name: 'Get latest Tag'
-        run: echo "LATEST_TAG=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
-      
-      - name: 'Create new release (current: ${{env.LATEST_TAG}}, new: ${{inputs.version}})'
+      - name: 'Create new release (${{inputs.version}})'
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: false
