@@ -7,6 +7,7 @@ on:
         description: 'Version for new release.'
         type: string
         required: true
+        default: '${{github.ref}}'
 
 permissions:
   contents: read
@@ -14,14 +15,14 @@ permissions:
 
 jobs:
   release:
-    name: 'Draft new release'
+    name: 'Draft new release (latest: ${{github.ref}})'
     runs-on: ubuntu-latest
 
     steps:
       - name: 'Setup Repository (${{github.event.repository.name}})'
         uses: actions/checkout@v4
       
-      - name: 'Create new release'
+      - name: 'Create new release (${{inputs.version}})'
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: false
