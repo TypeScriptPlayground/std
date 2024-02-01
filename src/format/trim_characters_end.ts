@@ -1,7 +1,12 @@
 /**
  * This function is similar to the standard `String.prototype.trimEnd()` function. With this function, several characters
  * can be specified as a string which are then trimmed at the end of the `inputString`.
- * 
+ *
+ * @example
+ * ```
+ * console.log(trimCharactersEnd('1abc123', '3c12'))
+ * // 1ab
+ * ```
  * @param inputString The input string to trim the end
  * @param characters The characters to trim
  * @returns The trimmed input string
