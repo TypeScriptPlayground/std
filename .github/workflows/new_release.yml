@@ -7,7 +7,7 @@ on:
         description: 'Version for new release.'
         type: string
         required: true
-        default: '${{github.ref}}'
+        default: ${{github.ref}}
 
 permissions:
   contents: read
