@@ -9,8 +9,7 @@ on:
         required: true
 
 permissions:
-  contents: read
-  packages: write
+  contents: write
 
 jobs:
   release:
