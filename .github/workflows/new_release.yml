@@ -20,7 +20,10 @@ jobs:
       - name: 'Setup Repository (${{github.event.repository.name}})'
         uses: actions/checkout@v4
       
-      - name: 'Create new release (${{inputs.version}})'
+      - name: 'Get latest Tag'
+        run: echo "LATEST_TAG=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+      
+      - name: 'Create new release (current: ${{env.LATEST_TAG}}, new: ${{inputs.version}})'
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: false
