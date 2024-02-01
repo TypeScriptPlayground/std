@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   release:
-    name: 'Draft new release (latest: ${{github.ref_name}})'
+    name: 'Draft new release (latest: ${{inputs.version}})'
     runs-on: ubuntu-latest
 
     steps:
