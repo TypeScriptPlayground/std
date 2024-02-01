@@ -23,4 +23,7 @@ jobs:
       
       - name: 'Create new release'
         uses: ncipollo/release-action@v1
-        
+        with:
+          allowUpdates: false
+          makeLatest: true
+          tag: ${{inputs.version}}
