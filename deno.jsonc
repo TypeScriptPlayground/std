@@ -30,5 +30,9 @@
                 "no-inferrable-types"
             ]
         }
+    },
+    "fmt": {
+        "semiColons": true,
+        "singleQuote": true
     }
 }
