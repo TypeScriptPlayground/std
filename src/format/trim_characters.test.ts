@@ -49,7 +49,7 @@ Deno.test(
             fn: () => {
                 assertEquals(
                     trimCharacters('\ttabc123t\t', '\t'),
-                    'tabc123'
+                    'tabc123t'
                 )
             }
         })
