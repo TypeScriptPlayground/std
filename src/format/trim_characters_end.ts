@@ -6,7 +6,7 @@
  * @param characters The characters to trim
  * @returns The trimmed input string
  */
-export default function trimCharactersStart(
+export default function trimCharactersEnd(
     inputString : string,
     characters : string
 ) : string {
