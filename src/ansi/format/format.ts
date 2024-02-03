@@ -29,7 +29,7 @@ const formats = {
     /** [Crosser-out](https://en.wikipedia.org/wiki/Strikethrough), or strike */
     STRIKETHROUGH: '9',
     /** Primary (default) font */
-    FONT_PRIMARY: '10',
+    FONT_DEFAULT: '10',
     /** Alternative font 1 */
     FONT_ALTERNATIVE_1: '11',
     /** Alternative font 2 */
