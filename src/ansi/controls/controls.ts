@@ -17,4 +17,7 @@ const controls = {
 
 export default controls;
 
+/**
+ * This type gets generated from the values of {@linkcode controls}.
+ */
 export type Control = C0Control | C1Control;
