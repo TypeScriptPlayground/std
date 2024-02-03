@@ -10,7 +10,7 @@ import { C1ControlValue } from "./control/c1_controls.ts";
 import { AllControlValue } from "./control/all_controls.ts";
 import { Bit4ColorValue } from "./color/bit4_colors.ts";
 import { Bit8ColorValue } from "./color/bit8_colors.ts";
-import { Format } from "./format/format.ts";
+import { FormatValue } from "./format/format.ts";
 
 export {
     c0Controls,
@@ -27,5 +27,5 @@ export type {
     AllControlValue,
     Bit4ColorValue,
     Bit8ColorValue,
-    Format
+    FormatValue
 }
