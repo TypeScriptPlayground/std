@@ -1,5 +1,5 @@
-import c0Controls, { C0Control } from "./c0_controls.ts";
-import c1Controls, { C1Control } from "./c1_controls.ts";
+import c0Controls, { C0ControlValue } from "./c0_controls.ts";
+import c1Controls, { C1ControlValue } from "./c1_controls.ts";
 
 /**
  * This object contains all ANSI control codes.
@@ -14,4 +14,4 @@ const allControls = {
 
 export default allControls;
 
-export type AllControl = C0Control | C1Control;
+export type AllControl = C0ControlValue | C1ControlValue;

@@ -83,5 +83,5 @@ export default c0Controls;
 /**
  * This type gets generated from the values of {@linkcode c0Controls}.
  */
-export type C0Control = ValuesFromObject<typeof c0Controls>;
+export type C0ControlValue = ValuesFromObject<typeof c0Controls>;
 

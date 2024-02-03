@@ -45,4 +45,4 @@ export default bit4Colors;
 /**
  * This type gets generated from the values of {@linkcode bit4Colors}.
  */
-export type Bit4Color = ValuesFromObject<typeof bit4Colors>;
+export type Bit4ColorValue = ValuesFromObject<typeof bit4Colors>;

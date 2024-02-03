@@ -79,5 +79,5 @@ export default c1Controls;
 /**
  * This type gets generated from the values of {@linkcode c1Controls}.
  */
-export type C1Control = ValuesFromObject<typeof c1Controls>;
+export type C1ControlValue = ValuesFromObject<typeof c1Controls>;
 

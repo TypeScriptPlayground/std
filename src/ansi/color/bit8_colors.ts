@@ -255,4 +255,4 @@ export default bit8Colors;
 /**
  * This type gets generated from the values of {@linkcode bit4Colors}.
  */
-export type Bit8Color = ValuesFromObject<typeof bit8Colors>;
+export type Bit8ColorValue = ValuesFromObject<typeof bit8Colors>;
