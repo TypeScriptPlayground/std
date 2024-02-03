@@ -14,4 +14,4 @@ const allControls = {
 
 export default allControls;
 
-export type AllControl = C0ControlValue | C1ControlValue;
+export type AllControlValue = C0ControlValue | C1ControlValue;
