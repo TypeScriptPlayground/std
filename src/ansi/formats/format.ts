@@ -124,4 +124,4 @@ export default formats;
 /**
  * This type gets generated from the values of {@linkcode formats}.
  */
-export type FormatValue = ValuesFromObject<typeof formats>;
+export type Format = ValuesFromObject<typeof formats>;

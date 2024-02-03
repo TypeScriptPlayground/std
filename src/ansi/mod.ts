@@ -1,31 +1,35 @@
-import c0Controls from "./control/c0_controls.ts";
-import c1Controls from "./control/c1_controls.ts";
-import allControls from "./control/all_controls.ts";
-import bit4Colors from "./color/bit4_colors.ts";
-import bit8Colors from "./color/bit8_colors.ts";
-import formats from "./format/format.ts";
+import colors from './colors/mod.ts'
+import controls from './controls/mod.ts'
+import formats from "./formats/format.ts";
 
-import { C0ControlValue } from "./control/c0_controls.ts";
-import { C1ControlValue } from "./control/c1_controls.ts";
-import { AllControlValue } from "./control/all_controls.ts";
-import { Bit4ColorValue } from "./color/bit4_colors.ts";
-import { Bit8ColorValue } from "./color/bit8_colors.ts";
-import { FormatValue } from "./format/format.ts";
+import type {
+    Bit4BackgroundColor,
+    Bit4ForegroundColor,
+    Bit8Color,
+    Bit8GrayscaleColor,
+    Bit24Color
+} from './colors/mod.ts'
+import type { 
+    C0Control,
+    C1Control, 
+    Control
+} from "./controls/mod.ts";
+import type { Format } from "./formats/format.ts";
 
-export {
-    c0Controls,
-    c1Controls,
-    allControls,
-    bit4Colors,
-    bit8Colors,
+export const ansi = {
+    colors,
+    controls,
     formats
 }
 
 export type {
-    C0ControlValue,
-    C1ControlValue,
-    AllControlValue,
-    Bit4ColorValue,
-    Bit8ColorValue,
-    FormatValue
+    Bit4BackgroundColor,
+    Bit4ForegroundColor,
+    Bit8Color,
+    Bit8GrayscaleColor,
+    Bit24Color,
+    C0Control,
+    C1Control,
+    Control,
+    Format
 }
