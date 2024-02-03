@@ -1,4 +1,4 @@
-import { ValuesFromObject } from "../../../type/mod.ts";
+import type { ValuesFromObject } from "../../../type/mod.ts";
 
 /**
  * This object contains all 4-Bit background color codes.

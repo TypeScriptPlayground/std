@@ -1,4 +1,4 @@
-import { ValuesFromObject } from "../../type/mod.ts";
+import type { ValuesFromObject } from "../../type/mod.ts";
 import colors from './colors.ts';
 import fonts from './fonts.ts';
 import ideograms from './ideograms.ts';
