@@ -1,5 +1,3 @@
-import parse from "./parse.ts"
+export const cli = {
 
-export {
-    parse
 }
