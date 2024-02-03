@@ -1,6 +1,6 @@
 import colors from './colors/mod.ts'
 import controls from './controls/mod.ts'
-import formats from "./formats/format.ts";
+import formats from "./formats/mod.ts";
 
 import type {
     Bit4BackgroundColor,
@@ -14,7 +14,14 @@ import type {
     C1Control, 
     Control
 } from "./controls/mod.ts";
-import type { Format } from "./formats/format.ts";
+import type { 
+    Color,
+    Font,
+    Format,
+    Ideogram,
+    Script,
+    TextDecoration
+} from "./formats/mod.ts";
 
 export const ansi = {
     colors,
@@ -31,5 +38,10 @@ export type {
     C0Control,
     C1Control,
     Control,
-    Format
+    Color,
+    Font,
+    Format,
+    Ideogram,
+    Script,
+    TextDecoration
 }
