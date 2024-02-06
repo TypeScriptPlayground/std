@@ -12,6 +12,12 @@ Deno.test(
         await test.step({
             name: 'Empty array',
             fn: () => {
+                function dummyFunction(
+                    previousValue,
+                    currentValue
+                ) {}
+                const dummyFunctionSpy = spy(dummyFunction);
+
                 
             }
         })
