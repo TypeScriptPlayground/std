@@ -1,7 +1,7 @@
 /**
  * This function calls the specified `pairFunction` for all the elements in an array. The function
- * starts with the second element and calls the `pairFunction` for every element. If the array only
- * contains one element, the `pairFunction` does not get called.
+ * starts with the second element and calls the `pairFunction` for every element. If the array
+ * contains less than two elements, the `pairFunction` does not get called.
  * 
  * @example
  * ```ts
