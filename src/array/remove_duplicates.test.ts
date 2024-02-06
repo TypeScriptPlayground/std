@@ -1,5 +1,5 @@
 import { assertEquals } from "https://deno.land/std@0.203.0/assert/assert_equals.ts";
-import removeDuplicates from "../format./array/remove_duplicates.ts";
+import removeDuplicates from "./remove_duplicates.ts";
 
 Deno.test(
     'Remove duplicates from array.',
