@@ -2,14 +2,11 @@
     "tasks": {
         "index": "deno run --check -A ./src/index.ts",
         "lint": "deno lint",
-        "test": "deno test -A --check --reload --doc --allow-none --junit-path=\"./report.xml\""
+        "test": "deno test -A --check --reload --doc --junit-path=\"./report.xml\""
     },
-    "exclude": [
-        "**/*.test.ts"
-    ],
     "test": {
         "include": [
-            "**/*.test.ts"
+            "./src/**/*.test.ts"
         ]
     },
     "lint": {
