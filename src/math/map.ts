@@ -10,15 +10,15 @@
  * @returns The mapped value
  */
 export default function map(
-    value : number,
-    fromMin : number,
-    fromMax : number,
-    toMin : number,
-    toMax : number
+  value : number,
+  fromMin : number,
+  fromMax : number,
+  toMin : number,
+  toMax : number
 ) : number {
-    if (value === 0) {
-        return 0;
-    }
-    
-    return (value - fromMin) * (toMax - toMin) / (fromMax - fromMin) + toMin;
+  if (value === 0) {
+    return 0;
+  }
+  
+  return (value - fromMin) * (toMax - toMin) / (fromMax - fromMin) + toMin;
 }

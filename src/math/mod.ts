@@ -4,8 +4,8 @@ import median from "./median.ts";
 import toFixed from "./to_fixed.ts";
 
 export { 
-    average,
-    map,
-    median,
-    toFixed
+  average,
+  map,
+  median,
+  toFixed
 }

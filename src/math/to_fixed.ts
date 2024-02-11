@@ -8,10 +8,10 @@
  * @returns The converted number
  */
 export default function toFixed(
-    value : number,
-    precision : number,
-    handleTrailingDecimalPlaces : (decimalPlacesValue : number) => number = Math.round
+  value : number,
+  precision : number,
+  handleTrailingDecimalPlaces : (decimalPlacesValue : number) => number = Math.round
 ) : number {
-    const decimalPlaces = Math.pow(10, precision)
-    return (handleTrailingDecimalPlaces(value * decimalPlaces)) / decimalPlaces;
+  const decimalPlaces = Math.pow(10, precision)
+  return (handleTrailingDecimalPlaces(value * decimalPlaces)) / decimalPlaces;
 }
