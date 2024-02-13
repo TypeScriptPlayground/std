@@ -26,12 +26,14 @@ Deno.test(
         2
       ]
     })
+
     assertSpyCall(dummyFunctionSpy, 1, {
       args: [
         2,
         3
       ]
     })
+
     assertSpyCall(dummyFunctionSpy, 2, {
       args: [
         3,
