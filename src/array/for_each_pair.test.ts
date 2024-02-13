@@ -15,7 +15,12 @@ Deno.test(
                 function dummyFunction(
                     previousValue : number,
                     currentValue : number
-                ) : void {}
+                ) : {
+                    previousValue : number,
+                    currentValue : number
+                } { return {
+                    previousValue, currentValue
+                }}
                 
                 const dummyFunctionSpy = spy(dummyFunction);
 
