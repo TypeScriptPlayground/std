@@ -1,6 +1,6 @@
 
 import { assertEquals } from 'https://deno.land/std@0.203.0/assert/assert_equals.ts';
-import parseString from './parse_string.ts';
+import splitBetweenTokens from './split_between_tokens.ts';
 
 Deno.test(
   'Split string between tokens.',
@@ -9,7 +9,7 @@ Deno.test(
       name: 'Empty string without tokens',
       fn: () => {
         assertEquals(
-          parseString(
+          splitBetweenTokens(
             '',
             []
           ),
@@ -22,7 +22,7 @@ Deno.test(
       name: 'Empty string with empty tokens',
       fn: () => {
         assertEquals(
-          parseString(
+          splitBetweenTokens(
             '',
             ['']
           ),
@@ -35,7 +35,7 @@ Deno.test(
       name: 'Empty string with tokens',
       fn: () => {
         assertEquals(
-          parseString(
+          splitBetweenTokens(
             '',
             ['-']
           ),
@@ -48,7 +48,7 @@ Deno.test(
       name: 'String without tokens',
       fn: () => {
         assertEquals(
-          parseString(
+          splitBetweenTokens(
             '100*(2^12/(7-5))/14.2',
             []
           ),
@@ -61,7 +61,7 @@ Deno.test(
       name: 'String without empty tokens',
       fn: () => {
         assertEquals(
-          parseString(
+          splitBetweenTokens(
             '100*(2^12/(7-5))/14.2',
             ['']
           ),
@@ -74,7 +74,7 @@ Deno.test(
       name: 'String with tokens',
       fn: () => {
         assertEquals(
-          parseString(
+          splitBetweenTokens(
             '100*(2^12/(7-5))/14.2',
             ['-']
           ),
