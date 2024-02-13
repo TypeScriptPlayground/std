@@ -1,4 +1,4 @@
-import reverseString from './reverse_string.ts';
+import reverseString from '../reverse_string.ts';
 import trimSequenceEnd from "./trim_sequence_end.ts";
 import trimSequenceStart from "./trim_sequence_start.ts";
 
