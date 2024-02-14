@@ -11,7 +11,7 @@
 export default class CustomError extends Error {
   constructor(
     message : string,
-    options : ErrorOptions
+    options? : ErrorOptions
   ) {
     super(message, options);
     Object.setPrototypeOf( this, new.target.prototype );
