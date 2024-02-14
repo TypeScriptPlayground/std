@@ -1,6 +1,6 @@
 import CustomError from '../../../error/custom_error.ts';
 
-export default class InvalidInput extends CustomError {
+export default class InvalidInputError extends CustomError {
   value : string;
   constructor(
     message : string,
