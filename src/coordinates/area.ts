@@ -1,3 +1,5 @@
+import { Coordinate } from './coordiante.ts';
+
 /**
  * This function calculates the total area for an array of coordinates.
  * 
@@ -5,7 +7,7 @@
  * @param coordinates An array of coordinates
  * @returns The total area
  */
-export default function area(coordinates : {x : number, y : number}[]) : number {
+export default function area(coordinates : Coordinate[]) : number {
     let totalArea = 0;
 
     coordinates.reduce(
@@ -14,18 +16,18 @@ export default function area(coordinates : {x : number, y : number}[]) : number 
             currentCoordinate
         ) => {
             const widthOfTotalArea = Math.abs(Math.max(
-                lastCoordinate.x,
-                currentCoordinate.x
+                lastCoordinate.xPosition,
+                currentCoordinate.xPosition
             ) - Math.min(
-                lastCoordinate.x,
-                currentCoordinate.x
+                lastCoordinate.xPosition,
+                currentCoordinate.xPosition
             ));
         
-            const height = (Math.abs(lastCoordinate.y) + Math.abs(currentCoordinate.y)) / 2;
+            const height = (Math.abs(lastCoordinate.yPosition) + Math.abs(currentCoordinate.yPosition)) / 2;
         
             const currentArea = widthOfTotalArea * height;
     
-            if (lastCoordinate.x - currentCoordinate.x > 0) {
+            if (lastCoordinate.xPosition - currentCoordinate.xPosition > 0) {
                 totalArea += currentArea;
             } else {
                 totalArea -= currentArea;
