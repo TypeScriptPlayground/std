@@ -1,15 +1,15 @@
 import { assertEquals } from "https://deno.land/std@0.203.0/assert/assert_equals.ts";
 import { assertThrows } from "https://deno.land/std@0.203.0/assert/assert_throws.ts";
-import formatString from "./format_string.ts";
+import replacePlaceholder from "./replace_placeholder.ts";
 
 Deno.test(
-    'Format string.',
+    'Replacing a placeholder in a string.',
     async (test) => {
         await test.step({
             name: 'Normal template string. ("{{person}}")',
             fn: () => {
                 assertEquals(
-                    formatString(
+                    replacePlaceholder(
                         'Test, hello {{person}}',
                         {person: 'User'}
                     ),
@@ -22,7 +22,7 @@ Deno.test(
             name: 'Special template string. ("\\{{person}}")',
             fn: () => {
                 assertEquals(
-                    formatString(
+                    replacePlaceholder(
                         'Test, hello \\{{person}}',
                         {person: 'User'}
                     ),
@@ -35,7 +35,7 @@ Deno.test(
             name: 'Special template string. ("\\\\{{person}}")',
             fn: () => {
                 assertEquals(
-                    formatString(
+                    replacePlaceholder(
                         'Test, hello \\\\{{person}}',
                         {person: 'User'}
                     ),
@@ -48,7 +48,7 @@ Deno.test(
             name: 'Special template string. ("{\\\\{person}}")',
             fn: () => {
                 assertEquals(
-                    formatString(
+                    replacePlaceholder(
                         'Test, hello {\\\\{person}}',
                         {person: 'User'}
                     ),
@@ -61,7 +61,7 @@ Deno.test(
             name: 'Special template string. ("{{person\\}}")',
             fn: () => {
                 assertEquals(
-                    formatString(
+                    replacePlaceholder(
                         'Test, hello {{person\\}}',
                         {person: 'User'}
                     ),
@@ -74,7 +74,7 @@ Deno.test(
             name: 'Object does not exist. Throw reference error.',
             fn: () => {
                 assertThrows(
-                    () => formatString(
+                    () => replacePlaceholder(
                         'Test, hello {{keyDoesNotExist}}',
                         {person: 'User'}
                     ),
