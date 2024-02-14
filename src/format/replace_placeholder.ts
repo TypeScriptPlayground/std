@@ -20,6 +20,6 @@ export default function replacePlaceholder(
     if (!Object.hasOwn(formatArgs, formatKey)) {
       throw new ReferenceError(`Format key '${formatKey}' does not exist on the provided format object`);
     }
-    return formatArgs[formatKey].toString()
+    return formatArgs[formatKey].toString();
   })
 }
