@@ -1,3 +1,3 @@
 import fetchJson from "./fetch_json.ts";
 
-export { fetchJson }
+export const fetch = { fetchJson }

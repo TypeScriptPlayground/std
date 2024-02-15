@@ -1,3 +1,5 @@
 import parseString from "./parse_string.ts";
 
-export { parseString }
+export const regexp = {
+  parseString
+}

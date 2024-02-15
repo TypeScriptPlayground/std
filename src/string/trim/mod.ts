@@ -5,7 +5,7 @@ import trimSequence from './trim_sequence.ts';
 import trimSequenceEnd from './trim_sequence_end.ts';
 import trimSequenceStart from './trim_sequence_start.ts';
 
-export const trim = {
+export default {
   trimCharactersStart,
   trimCharactersEnd,
   trimCharacters,

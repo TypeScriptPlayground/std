@@ -1,5 +1,5 @@
 import parseBoolean from "./parse_boolean.ts";
 
-export {
+export const parser = {
   parseBoolean
 }

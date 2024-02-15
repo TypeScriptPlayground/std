@@ -4,7 +4,7 @@ import isPathToFile from "./is_path_to_file.ts"
 import normalizePath from "./normalize_path.ts"
 import splitPath from "./split_path.ts";
 
-export {
+export const filesystem = {
     getFileExtensionFromPath,
     isPathToDirectory,
     isPathToFile,

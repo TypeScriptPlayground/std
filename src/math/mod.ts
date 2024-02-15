@@ -3,7 +3,7 @@ import map from "./map.ts";
 import median from "./median.ts";
 import toFixed from "./to_fixed.ts";
 
-export { 
+export const math = { 
   average,
   map,
   median,
