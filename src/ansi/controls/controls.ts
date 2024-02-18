@@ -13,7 +13,7 @@ import type { C1Control } from './c1_controls.ts'
 const controls = {
   ...c0Controls,
   ...c1Controls
-}
+} as const;
 
 export default controls;
 
