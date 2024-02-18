@@ -18,19 +18,19 @@
  * // This is a very long string >>>>>
  * ```
  * 
- * @param string The string to truncate
+ * @param input The string to truncate
  * @param maxLength The maximum length of the string (including the ellipsis pattern)
  * @param ellipsis Ellipsis pattern (default "...")
  * @returns The truncated string
  */
 export default function truncate(
-    string : string,
+    input : string,
     maxLength : number,
     ellipsis : string = '...'
 ) : string {
-    if (string.length <= maxLength) {
-        return string;
+    if (input.length <= maxLength) {
+        return input;
     } else {
-        return string.slice(0, maxLength - ellipsis.length) + ellipsis;
+        return input.slice(0, maxLength - ellipsis.length) + ellipsis;
     }
 }
