@@ -11,8 +11,8 @@ import type { C1Control } from './c1_controls.ts'
  * [vt100](https://vt100.net/docs/vt510-rm/chapter4.html)
  */
 const controls = {
-    ...c0Controls,
-    ...c1Controls
+  ...c0Controls,
+  ...c1Controls
 }
 
 export default controls;
