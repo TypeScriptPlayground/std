@@ -8,15 +8,15 @@
  * // Hello TypeScript
  * ```
  * 
- * @param string The string to format
+ * @param input The string to format
  * @param formatArgs An object with the corresponding keys matching the ones in the string
  * @returns The formatted string
  */
 export default function replacePlaceholder(
-  string : string,
+  input : string,
   formatArgs : Record<string, string | number>
 ) : string {
-  return string.replace(/(?<=(?:[^\\])(?:\\\\)*)\{\{\s*(\w+)\s*}}/gm, (_, formatKey : string) : string => {
+  return input.replace(/(?<=(?:[^\\])(?:\\\\)*)\{\{\s*(\w+)\s*}}/gm, (_, formatKey : string) : string => {
     if (!Object.hasOwn(formatArgs, formatKey)) {
       throw new ReferenceError(`Format key '${formatKey}' does not exist on the provided format object`);
     }
