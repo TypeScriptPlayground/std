@@ -45,3 +45,23 @@ export type {
     Script,
     TextDecoration
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log(red('Hello World!', 'FOREGROUND'))
+console.log(red('Hello World!', 'BACKGROUND'))
+console.log(red('Hello World!', 'BOTH'))
+
+console.log(whiteForeground() + redBackground() + 'Hello World!');
+
+red(str)
