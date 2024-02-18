@@ -1,4 +1,4 @@
-import { error } from '../error/mod.ts';
+import { error } from '../../error/mod.ts';
 
 export default class DecompressionError extends error.CustomError {
   data? : Uint8Array;
@@ -6,8 +6,8 @@ export default class DecompressionError extends error.CustomError {
     message : string,
     data? : Uint8Array
   ) {
-    super(message)
+    super(message);
     
-    this.data = data
+    this.data = data;
   }
 }

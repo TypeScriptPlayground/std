@@ -1,4 +1,4 @@
-import DecompressionError from '../decompress_error.ts';
+import DecompressionError from '../error/decompress_error.ts';
 
 export default async function decompress(
   data : Uint8Array,
