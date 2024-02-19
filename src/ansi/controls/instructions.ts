@@ -11,11 +11,14 @@ const instructions = {
   E: 'E',
   F: 'F',
   G: 'G',
+  H: 'h',
+  I: 'I',
   J: 'J',
   K: 'K',
   M: 'm',
   S: 's',
-  U: 'u'
+  U: 'u',
+  PRIVATE: '?'
 } as const;
 
 export default instructions;
