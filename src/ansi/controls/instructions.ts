@@ -7,7 +7,15 @@ const instructions = {
   A: 'A',
   B: 'B',
   C: 'C',
+  D: 'D',
+  E: 'E',
+  F: 'F',
+  G: 'G',
+  J: 'J',
+  K: 'K',
   M: 'm',
+  S: 's',
+  U: 'u'
 } as const;
 
 export default instructions;
