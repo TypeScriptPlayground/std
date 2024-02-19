@@ -1,5 +1,6 @@
 import c0Controls from "./c0_controls.ts";
 import c1Controls from "./c1_controls.ts";
+import instructions from './instructions.ts';
 
 import type { C0Control } from './c0_controls.ts'
 import type { C1Control } from './c1_controls.ts'
@@ -12,7 +13,8 @@ import type { C1Control } from './c1_controls.ts'
  */
 const controls = {
   ...c0Controls,
-  ...c1Controls
+  ...c1Controls,
+  ...instructions
 } as const;
 
 export default controls;
