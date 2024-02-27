@@ -1,4 +1,4 @@
-import DualDigit from './dual_digit.ts';
+import type DualDigit from './dual_digit.ts';
 
 /**
  * This type represents a byte.
