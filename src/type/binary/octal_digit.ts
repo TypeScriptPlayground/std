@@ -1,7 +1,7 @@
 /**
  * This type represents a octal digit.
  */
-type OctalDigit = 
+export type OctalDigit = 
   | '0' 
   | '1' 
   | '2' 
@@ -11,4 +11,3 @@ type OctalDigit =
   | '6' 
   | '7';
 
-export default OctalDigit;

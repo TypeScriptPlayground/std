@@ -1,7 +1,7 @@
 /**
  * This type represents a hex digit.
  */
-type HexDigit = 
+export type HexDigit = 
   | '0' 
   | '1' 
   | '2' 
@@ -25,4 +25,3 @@ type HexDigit =
   | 'E' 
   | 'F';
 
-export default HexDigit;

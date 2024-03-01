@@ -1,5 +1,5 @@
-import type { BackgroundColor } from './background_colors.ts';
-import type { ForegroundColor } from './foreground_colors.ts';
+import { BackgroundColor } from './background_colors.ts';
+import { ForegroundColor } from './foreground_colors.ts';
 
 /**
  * This type represents a 4 bit color

@@ -2,19 +2,19 @@ import colors from './colors/mod.ts'
 import controls from './controls/mod.ts'
 import formats from "./formats/mod.ts";
 
-import type {
+import {
     Bit4BackgroundColor,
     Bit4ForegroundColor,
     Bit8Color,
     Bit8GrayscaleColor,
     Bit24Color
 } from './colors/mod.ts'
-import type { 
+import { 
     C0Control,
     C1Control, 
     Control
 } from "./controls/mod.ts";
-import type { 
+import { 
     Color,
     Font,
     Action,

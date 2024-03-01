@@ -1,7 +1,7 @@
 /**
  * This type represents all lower case letters.
  */
-type LowerCaseLetter =
+export type LowerCaseLetter =
   | 'a'
   | 'b'
   | 'c'
@@ -28,5 +28,3 @@ type LowerCaseLetter =
   | 'x'
   | 'y'
   | 'z';
-
-export default LowerCaseLetter;
