@@ -1,38 +1,38 @@
-import colors from './colors/mod.ts'
+import * as colors from './colors/mod.ts'
 import controls from './controls/mod.ts'
 import formats from "./formats/mod.ts";
 
 import {
-    Bit4BackgroundColor,
-    Bit4ForegroundColor,
-    Bit8Color,
-    Bit8GrayscaleColor,
-    Bit24Color
+  Bit4BackgroundColor,
+  Bit4ForegroundColor,
+  Bit8ColorfulColor,
+  Bit8GrayscaleColor,
+  Bit24Color
 } from './colors/mod.ts'
 import { 
-    C0Control,
-    C1Control, 
-    Control
+  C0Control,
+  C1Control,
+  Instruction
 } from "./controls/mod.ts";
 import { 
-    Color,
-    Font,
-    Action,
-    Ideogram,
-    Script,
-    TextDecoration
+  Color,
+  Font,
+  Action,
+  Ideogram,
+  Script,
+  TextDecoration
 } from "./formats/mod.ts";
 
 export const ansi = {
-    colors,
-    controls,
-    formats
+  colors,
+  controls,
+  formats
 }
 
 export type {
     Bit4BackgroundColor,
     Bit4ForegroundColor,
-    Bit8Color,
+    Bit8ColorfulColor,
     Bit8GrayscaleColor,
     Bit24Color,
     C0Control,
