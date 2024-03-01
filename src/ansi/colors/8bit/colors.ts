@@ -5,7 +5,7 @@ import type { ValuesFromObject } from "../../../type/mod.ts";
  * 
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit)
  */
-const colors = {
+const colorfulColors = {
   HEX_000000: '16',
   HEX_00005F: '17',
   HEX_000087: '18',
@@ -224,9 +224,9 @@ const colors = {
   HEX_FFFFFF: '231',
 } as const;
 
-export default colors;
+export default colorfulColors;
 
 /**
- * This type gets generated from the values of {@linkcode colors}.
+ * This type gets generated from the values of {@linkcode colorfulColors}.
  */
-export type Color = ValuesFromObject<typeof colors>;
+export type ColorfulColor = ValuesFromObject<typeof colorfulColors>;
