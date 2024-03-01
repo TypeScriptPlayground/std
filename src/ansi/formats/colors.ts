@@ -1,4 +1,4 @@
-import type { ValuesFromObject } from "../../type/mod.ts";
+import { ValuesFromObject } from "../../type/mod.ts";
 
 /**
  * This object contains all color format codes.
@@ -9,6 +9,8 @@ import type { ValuesFromObject } from "../../type/mod.ts";
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters)
  */
 const colors = {
+  /** Reset or normal */
+  RESET: '0',
   // FOREGROUND_COLOR: 30 - 37
   /** Set foreground [color](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) */
   FOREGROUND_COLOR: '38',

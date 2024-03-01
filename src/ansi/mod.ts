@@ -17,7 +17,7 @@ import type {
 import type { 
     Color,
     Font,
-    Format,
+    Action,
     Ideogram,
     Script,
     TextDecoration
@@ -40,7 +40,7 @@ export type {
     Control,
     Color,
     Font,
-    Format,
+    Action,
     Ideogram,
     Script,
     TextDecoration

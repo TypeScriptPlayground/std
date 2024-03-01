@@ -1,4 +1,4 @@
-import type { ValuesFromObject } from "../../type/mod.ts";
+import { ValuesFromObject } from "../../type/mod.ts";
 
 /**
  * This object contains all ideogram format codes.
@@ -9,6 +9,8 @@ import type { ValuesFromObject } from "../../type/mod.ts";
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters)
  */
 const ideograms = {
+  /** Reset or normal */
+  RESET: '0',
   /** Ideogram underline or right side line */
   IDEOGRAM_RIGHT_SIDE_LINE: '60',
   /** Ideogram double underline, or double line on the right side */

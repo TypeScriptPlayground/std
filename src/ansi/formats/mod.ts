@@ -1,30 +1,23 @@
-import colors from './colors.ts';
-import fonts from './fonts.ts';
-import formats from './format.ts';
-import ideograms from './ideograms.ts';
-import scripts from './scripts.ts';
-import textDecorations from './text_decoreations.ts';
+import actions, { Action } from './actions.ts';
+import colors, { Color } from './colors.ts';
+import fonts, { Font } from './fonts.ts';
+import ideograms, { Ideogram } from './ideograms.ts';
+import scripts, { Script } from './scripts.ts';
+import textDecorations, { TextDecoration } from './text_decoreations.ts';
 
-import type { Color } from './colors.ts';
-import type { Font } from './fonts.ts';
-import type { Format } from './format.ts';
-import type { Ideogram } from './ideograms.ts';
-import type { Script } from './scripts.ts';
-import type { TextDecoration } from './text_decoreations.ts';
-
-export default {
+export const format = {
+  actions,
   colors,
   fonts,
-  formats,
   ideograms,
   scripts,
   textDecorations
 }
 
 export type {
+  Action,
   Color,
   Font,
-  Format,
   Ideogram,
   Script,
   TextDecoration

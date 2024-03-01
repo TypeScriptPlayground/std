@@ -1,4 +1,4 @@
-import type { ValuesFromObject } from "../../type/mod.ts";
+import { ValuesFromObject } from "../../type/mod.ts";
 
 /**
  * This object contains all text decoration format codes.
@@ -9,6 +9,8 @@ import type { ValuesFromObject } from "../../type/mod.ts";
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters)
  */
 const textDecorations = {
+  /** Reset or normal */
+  RESET: '0',
   /** Bold or increased intensity */
   FONT_WEIGHT_BOLD: '1',
   /** Faint, decreased intensity, or dim */

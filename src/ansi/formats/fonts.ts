@@ -1,4 +1,4 @@
-import type { ValuesFromObject } from "../../type/mod.ts";
+import { ValuesFromObject } from "../../type/mod.ts";
 
 /**
  * This object contains all font format codes.
@@ -8,6 +8,8 @@ import type { ValuesFromObject } from "../../type/mod.ts";
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters)
  */
 const fonts = {
+  /** Reset or normal */
+  RESET: '0',
   /** Primary (default) font */
   FONT_DEFAULT: '10',
   /** Alternative font 1 */
