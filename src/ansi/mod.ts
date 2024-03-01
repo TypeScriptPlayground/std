@@ -1,6 +1,17 @@
-import * as colors from './colors/mod.ts'
-import controls from './controls/mod.ts'
-import formats from "./formats/mod.ts";
+import {
+  bit4BackgroundColors,
+  bit4ForegroundColors,
+  bit8Colors,
+  bit8GrayscaleColors
+} from './colors/mod.ts'
+import {
+  c0Controls,
+  c1Controls,
+  instructions
+} from './controls/mod.ts'
+import {
+  
+} from "./formats/mod.ts";
 
 import {
   Bit4BackgroundColor,
