@@ -6,6 +6,6 @@
  * @param parameter The parameter which has an `any` or `unknown` type.
  * @returns The parameter with the new type.
  */
-export function typeFromUnknown<Type extends unknown>(parameter : Type) : Type {
+export default function typeFromUnknown<Type extends unknown>(parameter : Type) : Type {
     return parameter as Type;
 }

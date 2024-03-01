@@ -15,7 +15,7 @@ type Enumerate<
  * @template Start The start for the number range.
  * @template End The end for the number range.
  */
-type NumberRange<
+export type NumberRange<
     Start extends number,
     End extends number
 > = Exclude<
@@ -23,4 +23,3 @@ type NumberRange<
     Enumerate<Start>
 >
 
-export default NumberRange

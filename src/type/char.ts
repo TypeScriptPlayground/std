@@ -1,8 +1,7 @@
 
-type Char<Type extends string> = Type extends `${infer _FirstChar}${infer Rest}`
+export type Char<Type extends string> = Type extends `${infer _FirstChar}${infer Rest}`
   ? Rest extends ''
     ? Type
     : never
   : never;
 
-export default Char
