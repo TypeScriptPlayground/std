@@ -11,7 +11,6 @@ import { ValuesFromObject } from "../../type/mod.ts";
 const colors = {
   /** Reset or normal */
   RESET: '0',
-  // FOREGROUND_COLOR: 30 - 37
   /** Set foreground [color](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) */
   FOREGROUND_COLOR: '38',
   /** Default foreground color */

@@ -1,4 +1,4 @@
-import { ColorfulColor } from './colors.ts';
+import { ColorfulColor } from './colorful_colors.ts';
 import { GrayscaleColor } from './grayscale_colors.ts'
 
 /**
