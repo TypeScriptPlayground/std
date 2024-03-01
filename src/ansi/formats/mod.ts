@@ -5,7 +5,7 @@ import ideograms, { Ideogram } from './ideograms.ts';
 import scripts, { Script } from './scripts.ts';
 import textDecorations, { TextDecoration } from './text_decoreations.ts';
 
-export const format = {
+export {
   actions,
   colors,
   fonts,
