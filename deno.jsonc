@@ -1,4 +1,7 @@
 {
+    "name": "@typescriptplayground/std",
+    "version": "0.1.0",
+    "exports": "./src",
     "tasks": {
         "index": "deno run --check -A ./src/index.ts",
         "lint": "deno lint",
