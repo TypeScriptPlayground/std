@@ -7,7 +7,7 @@ import { ValuesFromObject } from "../../type/mod.ts";
  * 
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters)
  */
-const fonts = {
+const fontCodes = {
   /** Reset or normal */
   RESET: '0',
   /** Primary (default) font */
@@ -34,9 +34,9 @@ const fonts = {
   FONT_FRACTURE: '20',
 } as const;
 
-export default fonts;
+export default fontCodes;
 
 /**
- * This type gets generated from the values of {@linkcode fonts}.
+ * This type gets generated from the values of {@linkcode fontCodes}.
  */
-export type Font = ValuesFromObject<typeof fonts>;
+export type FontCode = ValuesFromObject<typeof fontCodes>;

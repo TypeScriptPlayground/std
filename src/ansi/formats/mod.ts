@@ -1,24 +1,31 @@
-import actions, { Action } from './actions.ts';
-import colorCodes, { ColorCode } from './colors.ts';
-import fonts, { Font } from './fonts.ts';
-import ideograms, { Ideogram } from './ideograms.ts';
-import scripts, { Script } from './scripts.ts';
-import textDecorations, { TextDecoration } from './text_decoreations.ts';
+import actionCodes from './action_codes.ts';
+import colorCodes from './color_codes.ts';
+import fontCodes from './font_codes.ts';
+import ideogramCodes from './ideogram_codes.ts';
+import scriptCodes from './script_codes.ts';
+import textDecorationCodes from './text_decoreation_codes.ts';
+
+import { ActionCode } from './action_codes.ts';
+import { ColorCode } from './color_codes.ts'
+import { FontCode } from './font_codes.ts';
+import { IdeogramCode } from './ideogram_codes.ts';
+import { ScriptCode } from './script_codes.ts';
+import { TextDecorationCode } from './text_decoreation_codes.ts';
 
 export {
-  actions,
+  actionCodes,
   colorCodes,
-  fonts,
-  ideograms,
-  scripts,
-  textDecorations
+  fontCodes,
+  ideogramCodes,
+  scriptCodes,
+  textDecorationCodes
 }
 
 export type {
-  Action,
+  ActionCode,
   ColorCode,
-  Font,
-  Ideogram,
-  Script,
-  TextDecoration
+  FontCode,
+  IdeogramCode,
+  ScriptCode,
+  TextDecorationCode
 }

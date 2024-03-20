@@ -8,7 +8,7 @@ import { ValuesFromObject } from "../../type/mod.ts";
  * 
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters)
  */
-const textDecorations = {
+const textDecorationCodes = {
   /** Reset or normal */
   RESET: '0',
   /** Bold or increased intensity */
@@ -51,9 +51,9 @@ const textDecorations = {
   OVERLINE_RESET: '55',
 } as const;
 
-export default textDecorations;
+export default textDecorationCodes;
 
 /**
- * This type gets generated from the values of {@linkcode textDecorations}.
+ * This type gets generated from the values of {@linkcode textDecorationCodes}.
  */
-export type TextDecoration = ValuesFromObject<typeof textDecorations>;
+export type TextDecorationCode = ValuesFromObject<typeof textDecorationCodes>;

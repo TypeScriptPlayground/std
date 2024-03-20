@@ -7,7 +7,7 @@ import { ValuesFromObject } from "../../type/mod.ts";
  * 
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters)
  */
-const actions = {
+const actionCodes = {
     /** Reset or normal */
     RESET: '0',
     /** Slow blink */
@@ -20,9 +20,9 @@ const actions = {
     HIDE_RESET: '28'
 } as const;
 
-export default actions;
+export default actionCodes;
 
 /**
- * This type gets generated from the values of {@linkcode actions}.
+ * This type gets generated from the values of {@linkcode actionCodes}.
  */
-export type Action = ValuesFromObject<typeof actions>;
+export type ActionCode = ValuesFromObject<typeof actionCodes>;

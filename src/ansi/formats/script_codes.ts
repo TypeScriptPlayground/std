@@ -8,7 +8,7 @@ import { ValuesFromObject } from "../../type/mod.ts";
  * 
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters)
  */
-const scripts = {
+const scriptCodes = {
   /** Reset or normal */
   RESET: '0',
   /** Superscript */
@@ -19,9 +19,9 @@ const scripts = {
   SUPERSCRIPT_SUBSCRIPT_RESET: '75'
 } as const;
 
-export default scripts;
+export default scriptCodes;
 
 /**
- * This type gets generated from the values of {@linkcode scripts}.
+ * This type gets generated from the values of {@linkcode scriptCodes}.
  */
-export type Script = ValuesFromObject<typeof scripts>;
+export type ScriptCode = ValuesFromObject<typeof scriptCodes>;

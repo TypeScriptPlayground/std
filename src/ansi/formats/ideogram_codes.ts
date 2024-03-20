@@ -8,7 +8,7 @@ import { ValuesFromObject } from "../../type/mod.ts";
  * 
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters)
  */
-const ideograms = {
+const ideogramCodes = {
   /** Reset or normal */
   RESET: '0',
   /** Ideogram underline or right side line */
@@ -25,9 +25,9 @@ const ideograms = {
   IDEOGRAM_RESET: '65',
 } as const;
 
-export default ideograms;
+export default ideogramCodes;
 
 /**
- * This type gets generated from the values of {@linkcode ideograms}.
+ * This type gets generated from the values of {@linkcode ideogramCodes}.
  */
-export type Ideogram = ValuesFromObject<typeof ideograms>;
+export type IdeogramCode = ValuesFromObject<typeof ideogramCodes>;
