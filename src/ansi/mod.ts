@@ -6,7 +6,7 @@ import * as Color from './colors/mod.ts'
 import * as Control from './controls/mod.ts'
 import * as Format from './formats/mod.ts'
 
-export {
+export const ansi = {
   color,
   control,
   format
