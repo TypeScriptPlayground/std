@@ -15,7 +15,7 @@ export {
 }
 
 export type {
+  Color,
   BackgroundColorCode,
-  ForegroundColorCode,
-  Color
+  ForegroundColorCode
 }
