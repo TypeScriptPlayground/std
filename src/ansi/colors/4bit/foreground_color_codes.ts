@@ -5,7 +5,7 @@ import { ValuesFromObject } from "../../../type/mod.ts";
  * 
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit)
  */
-const foregroundColors = {
+const foregroundColorCodes = {
   BLACK: '30',
   RED: '31',
   GREEN: '32',
@@ -24,9 +24,9 @@ const foregroundColors = {
   WHITE_BRIGHT: '97',
 } as const;
 
-export default foregroundColors;
+export default foregroundColorCodes;
 
 /**
- * This type gets generated from the values of {@linkcode foregroundColors}.
+ * This type gets generated from the values of {@linkcode foregroundColorCodes}.
  */
-export type ForegroundColor = ValuesFromObject<typeof foregroundColors>;
+export type ForegroundColorCode = ValuesFromObject<typeof foregroundColorCodes>;

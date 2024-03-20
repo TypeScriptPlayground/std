@@ -1,7 +1,7 @@
-import { BackgroundColor } from './background_colors.ts';
-import { ForegroundColor } from './foreground_colors.ts';
+import { BackgroundColorCode } from './background_color_codes.ts';
+import { ForegroundColorCode } from './foreground_color_codes.ts';
 
 /**
  * This type represents a 4 bit color
  */
-export type Color = ForegroundColor | BackgroundColor;
+export type Color = ForegroundColorCode | BackgroundColorCode;

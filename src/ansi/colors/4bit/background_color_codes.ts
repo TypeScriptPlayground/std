@@ -5,7 +5,7 @@ import { ValuesFromObject } from "../../../type/mod.ts";
  * 
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit)
  */
-const backgroundColors = {
+const backgroundColorCodes = {
   BLACK: '40',
   RED: '41',
   GREEN: '42',
@@ -24,9 +24,9 @@ const backgroundColors = {
   WHITE_BRIGHT: '107',
 } as const;
 
-export default backgroundColors;
+export default backgroundColorCodes;
 
 /**
- * This type gets generated from the values of {@linkcode backgroundColors}.
+ * This type gets generated from the values of {@linkcode backgroundColorCodes}.
  */
-export type BackgroundColor = ValuesFromObject<typeof backgroundColors>;
+export type BackgroundColorCode = ValuesFromObject<typeof backgroundColorCodes>;
