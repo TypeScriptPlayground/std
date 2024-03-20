@@ -1,40 +1,40 @@
 {
-    "name": "@typescriptplayground/std",
-    "version": "0.1.0",
-    "exports": "./src",
-    "tasks": {
-        "index": "deno run --check -A ./src/index.ts",
-        "lint": "deno lint",
-        "test": "deno test -A --check --reload --doc --junit-path=\"./report.xml\""
-    },
-    "test": {
-        "include": [
-            "./src/**/*.test.ts"
-        ]
-    },
-    "lint": {
-        "rules": {
-            "tags": [
-                "recommended"
-            ],
-            "include": [
-                "camelcase",
-                "default-param-last",
-                "eqeqeq",
-                "explicit-function-return-type",
-                "explicit-module-boundary-types",
-                "guard-for-in",
-                "no-eval",
-                "no-sparse-arrays",
-                "prefer-ascii"
-            ],
-            "exclude": [
-                "no-inferrable-types"
-            ]
-        }
-    },
-    "fmt": {
-        "semiColons": true,
-        "singleQuote": true
+  "name": "@typescriptplayground/std",
+  "version": "0.1.0",
+  "exports": "./src",
+  "tasks": {
+    "index": "deno run --check -A ./src/index.ts",
+    "lint": "deno lint",
+    "test": "deno test -A --check --reload --doc --junit-path=\"./report.xml\""
+  },
+  "test": {
+    "include": [
+      "./src/**/*.test.ts"
+    ]
+  },
+  "lint": {
+    "rules": {
+      "tags": [
+        "recommended"
+      ],
+      "include": [
+        "camelcase",
+        "default-param-last",
+        "eqeqeq",
+        "explicit-function-return-type",
+        "explicit-module-boundary-types",
+        "guard-for-in",
+        "no-eval",
+        "no-sparse-arrays",
+        "prefer-ascii"
+      ],
+      "exclude": [
+        "no-inferrable-types"
+      ]
     }
+  },
+  "fmt": {
+    "semiColons": true,
+    "singleQuote": true
+  }
 }
