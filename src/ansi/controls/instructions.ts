@@ -18,7 +18,8 @@ const instructions = {
   FORMAT_TERMINATOR: 'm',
   CURSOR_SAVE_POSITION: 's',
   U: 'u',
-  PRIVATE: '?'
+  PRIVATE: '?',
+  SEQUENCE_INTRODUCER: '['
 } as const;
 
 export default instructions;

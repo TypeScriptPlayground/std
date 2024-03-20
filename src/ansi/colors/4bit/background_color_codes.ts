@@ -1,4 +1,5 @@
 import { ValuesFromObject } from "../../../type/mod.ts";
+import * as format from '../../formats/mod.ts'
 
 /**
  * This object contains all 4-Bit background color codes.
@@ -6,6 +7,8 @@ import { ValuesFromObject } from "../../../type/mod.ts";
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit)
  */
 const backgroundColorCodes = {
+  DEFAULT: format.colors.BACKGROUND_COLOR_DEFAULT,
+  RESET: format.colors.RESET,
   BLACK: '40',
   RED: '41',
   GREEN: '42',

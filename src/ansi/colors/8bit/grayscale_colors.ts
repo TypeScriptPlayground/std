@@ -37,4 +37,4 @@ export default grayscaleColors;
 /**
  * This type gets generated from the values of {@linkcode grayscaleColors}.
  */
-export type GrayscaleColor = ValuesFromObject<typeof grayscaleColors>;
+export type GrayscaleColorCode = ValuesFromObject<typeof grayscaleColors>;

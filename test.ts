@@ -1,1 +1,3 @@
-Deno.stdout.write(new TextEncoder().encode('\x1b[31mHello\x1b[0m'))
+import { black, red, yellow } from './src/ansi/colors/4bit/background_colors/mod.ts';
+
+Deno.stdout.write(new TextEncoder().encode(yellow('Hello')))

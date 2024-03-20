@@ -229,4 +229,4 @@ export default colorfulColors;
 /**
  * This type gets generated from the values of {@linkcode colorfulColors}.
  */
-export type ColorfulColor = ValuesFromObject<typeof colorfulColors>;
+export type ColorfulColorCode = ValuesFromObject<typeof colorfulColors>;

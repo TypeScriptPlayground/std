@@ -1,6 +1,6 @@
 import { Color } from './color.ts';
-import colorfulColors, { ColorfulColor } from './colorful_colors.ts';
-import grayscaleColors, { GrayscaleColor } from './grayscale_colors.ts';
+import colorfulColors, { ColorfulColorCode } from './colorful_colors.ts';
+import grayscaleColors, { GrayscaleColorCode } from './grayscale_colors.ts';
 
 export {
   colorfulColors,
@@ -8,7 +8,7 @@ export {
 }
 
 export type {
-  ColorfulColor,
-  GrayscaleColor,
+  ColorfulColorCode,
+  GrayscaleColorCode,
   Color
 }

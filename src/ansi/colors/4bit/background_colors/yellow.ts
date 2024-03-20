@@ -1,5 +1,4 @@
-import { c0Controls } from '../../../controls/mod.ts';
-import * as format from '../../../formats/mod.ts';
+import backgroundColor from '../background_color.ts';
 import { backgroundColorCodes } from '../mod.ts';
 
 /**
@@ -10,7 +9,7 @@ import { backgroundColorCodes } from '../mod.ts';
  */
 export default function yellow(text? : string) : string {
   if (!text) {
-    return `${c0Controls.ESC}[${backgroundColorCodes.YELLOW}`;
+    return backgroundColor(backgroundColorCodes.YELLOW);
   }
-  return `${c0Controls.ESC}[${backgroundColorCodes.YELLOW}${text}${format.colors.BACKGROUND_COLOR_DEFAULT}`;
+  return backgroundColor(backgroundColorCodes.YELLOW) + text + backgroundColor(backgroundColorCodes.DEFAULT);
 }
