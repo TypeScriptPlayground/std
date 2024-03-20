@@ -7,8 +7,8 @@ import * as format from '../../formats/mod.ts'
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit)
  */
 const backgroundColorCodes = {
-  DEFAULT: format.colors.BACKGROUND_COLOR_DEFAULT,
-  RESET: format.colors.RESET,
+  DEFAULT: format.colorCodes.BACKGROUND_COLOR_DEFAULT,
+  RESET: format.colorCodes.RESET,
   BLACK: '40',
   RED: '41',
   GREEN: '42',

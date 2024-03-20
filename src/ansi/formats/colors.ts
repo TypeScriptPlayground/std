@@ -8,7 +8,7 @@ import { ValuesFromObject } from "../../type/mod.ts";
  * 
  * [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters)
  */
-const colors = {
+const colorCodes = {
   /** Reset or normal */
   RESET: '0',
   /** Set foreground [color](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) */
@@ -28,9 +28,9 @@ const colors = {
   SWAP_FOREGROUND_BACKGROUND_COLOR: '7',
 } as const;
 
-export default colors;
+export default colorCodes;
 
 /**
- * This type gets generated from the values of {@linkcode colors}.
+ * This type gets generated from the values of {@linkcode colorCodes}.
  */
-export type Color = ValuesFromObject<typeof colors>;
+export type ColorCode = ValuesFromObject<typeof colorCodes>;
