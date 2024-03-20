@@ -4,6 +4,4 @@ import { GrayscaleColor } from './grayscale_colors.ts'
 /**
  * This type represents a 4 bit color
  */
-type Color = ColorfulColor | GrayscaleColor;
-
-export default Color;
+export type Color = ColorfulColor | GrayscaleColor;
