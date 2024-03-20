@@ -1,4 +1,4 @@
-import { isEmpty } from '../array/mod.ts';
+import { array } from '../array/mod.ts';
 
 /**
  * This function spits a string between tokens.
@@ -14,7 +14,7 @@ export default function splitBetweenTokens(
   if (!input) {
     return [];
   }
-  if (isEmpty(tokens)) {
+  if (array.isEmpty(tokens)) {
     return [input];
   }
   const escapedTokens = `\\${tokens.join('\\')}`;
