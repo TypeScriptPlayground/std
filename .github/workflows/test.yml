@@ -32,4 +32,5 @@ jobs:
       - name: Generate jUnit Report
         uses: mikepenz/action-junit-report@main
         with:
+          include_passed: true
           report_paths: 'report.xml'
