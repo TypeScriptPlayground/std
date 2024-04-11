@@ -30,12 +30,7 @@ Deno.test(
     const dummyFunctionSpy = spy(dummyFunction);
 
     forEachPair(
-      [
-        0,
-        2, 
-        3, 
-        7
-      ],
+      [0, 2, 3, 7],
       dummyFunctionSpy
     )
     
@@ -44,42 +39,24 @@ Deno.test(
       fn: () => {
         assertSpyCall(dummyFunctionSpy, 0, {
           args: [
-            0,
-            2,
-            1,
-            [
-              0, 
-              2, 
-              3, 
-              7
+            0, 2, 1, [
+              0, 2, 3, 7
             ]
           ]
         })
     
         assertSpyCall(dummyFunctionSpy, 1, {
           args: [
-            2,
-            3,
-            2,
-            [
-              0, 
-              2, 
-              3, 
-              7
+            2, 3, 2, [
+              0, 2, 3, 7
             ]
           ]
         })
     
         assertSpyCall(dummyFunctionSpy, 2, {
           args: [
-            3,
-            7,
-            3,
-            [
-              0, 
-              2, 
-              3, 
-              7
+            3, 7, 3, [
+              0, 2, 3, 7
             ]
           ]
         })
