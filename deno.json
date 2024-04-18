@@ -27,6 +27,7 @@
         "no-eval",
         "no-sparse-arrays",
         "no-external-import",
+        "no-non-null-asserted-optional-chain",
         "prefer-ascii"
       ],
       "exclude": [
