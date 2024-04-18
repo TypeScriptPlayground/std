@@ -26,6 +26,7 @@
         "guard-for-in",
         "no-eval",
         "no-sparse-arrays",
+        "no-external-import",
         "prefer-ascii"
       ],
       "exclude": [
