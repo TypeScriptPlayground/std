@@ -29,6 +29,7 @@
         "no-external-import",
         "no-non-null-asserted-optional-chain",
         "no-non-null-assertion",
+        "no-self-compare",
         "prefer-ascii"
       ],
       "exclude": [
