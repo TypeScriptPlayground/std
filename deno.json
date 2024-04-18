@@ -30,6 +30,7 @@
         "no-non-null-asserted-optional-chain",
         "no-non-null-assertion",
         "no-self-compare",
+        "no-sparse-arrays",
         "prefer-ascii"
       ],
       "exclude": [
