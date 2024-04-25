@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "exports": "./src",
   "tasks": {
-    "index": "deno run --check -A ./src/index.ts",
     "lint": "deno lint",
     "test": "deno test -A --check --reload --doc --junit-path=\"./report.xml\""
   },
