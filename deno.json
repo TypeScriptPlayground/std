@@ -26,7 +26,6 @@
         "guard-for-in",
         "no-const-assign",
         "no-eval",
-        "no-sparse-arrays",
         "no-external-import",
         "no-non-null-asserted-optional-chain",
         "no-non-null-assertion",
