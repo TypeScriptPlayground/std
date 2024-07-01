@@ -10,13 +10,15 @@
  * 
  * @param input The string to format
  * @param formatArgs An object with the corresponding keys matching the ones in the string
+ * @param placeholderPattern A pattern to search for the keys
  * @returns The formatted string
  */
 export default function replacePlaceholder(
   input : string,
-  formatArgs : Record<string, string | number>
+  formatArgs : Record<string, string | number>,
+  placeholderPattern : RegExp = /(?<=(?:[^\\])(?:\\\\)*)\{\{\s*(\w+)\s*}}/gm
 ) : string {
-  return input.replace(/(?<=(?:[^\\])(?:\\\\)*)\{\{\s*(\w+)\s*}}/gm, (_, formatKey : string) : string => {
+  return input.replace(placeholderPattern, (_, formatKey : string) : string => {
     if (!Object.hasOwn(formatArgs, formatKey)) {
       throw new ReferenceError(`Format key '${formatKey}' does not exist on the provided format object`);
     }
