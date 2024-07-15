@@ -1,7 +1,4 @@
 {
-  "name": "@typescriptplayground/std",
-  "version": "0.1.0",
-  "exports": "./src",
   "tasks": {
     "lint": "deno lint",
     "test": "deno test -A --check --reload --doc --junit-path=\"./report.xml\" ./src/**/*.test.ts"
