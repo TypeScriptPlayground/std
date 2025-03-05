@@ -3,13 +3,13 @@
  * 
  * @example
  * ```ts
- * console.log(isEmpty([' ']))
+ * console.log(containsOnlyEmptyStrings([' ']))
  * // false
  * 
- * console.log(isEmpty(['']))
+ * console.log(containsOnlyEmptyStrings(['']))
  * // true
  * 
- * console.log(isEmpty([
+ * console.log(containsOnlyEmptyStrings([
  *   '',
  *   ''
  * ]))
