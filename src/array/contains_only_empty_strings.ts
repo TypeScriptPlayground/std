@@ -16,7 +16,7 @@
  * // true
  * ```
  * @param input The input array to check
- * @return If the array is empty
+ * @returns If the array only contains empty strings
  */
 export default function containsOnlyEmptyStrings(input : string[]) : boolean {
   return input.join('') === '';
