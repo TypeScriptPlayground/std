@@ -18,6 +18,6 @@
  * @param input The input array to check
  * @return If the array is empty
  */
-export default function isEmpty(input : string[]) : boolean {
+export default function containsOnlyEmptyStrings(input : string[]) : boolean {
   return input.join('') === '';
 }
