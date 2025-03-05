@@ -1,5 +1,5 @@
 import { assertEquals } from 'https://deno.land/std@0.203.0/assert/assert_equals.ts';
-import isEmpty from './is_empty.ts';
+import containsOnlyEmptyStrings from './contains_only_empty_strings.ts';
 
 Deno.test(
   'Calculate median value of number array.',
@@ -8,7 +8,7 @@ Deno.test(
       name: 'Empty array []',
       fn: () => {
         assertEquals(
-          isEmpty([]),
+          containsOnlyEmptyStrings([]),
           true,
         );
       },
@@ -18,7 +18,7 @@ Deno.test(
       name: 'Array with empty string',
       fn: () => {
         assertEquals(
-          isEmpty(['']),
+          containsOnlyEmptyStrings(['']),
           true,
         );
       },
@@ -28,7 +28,7 @@ Deno.test(
       name: 'Array with multiple empty strings',
       fn: () => {
         assertEquals(
-          isEmpty([
+          containsOnlyEmptyStrings([
             '',
             ''
           ]),
@@ -41,7 +41,7 @@ Deno.test(
       name: 'Array with string',
       fn: () => {
         assertEquals(
-          isEmpty([' ']),
+          containsOnlyEmptyStrings([' ']),
           false,
         );
       },
