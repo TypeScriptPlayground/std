@@ -138,7 +138,7 @@ class ErrorHandler {
    * 
    * @param callback Function that handles the error
    */
-  otherwise(callback : (error : unknown) => void) : this {
+  unknown(callback : (error : unknown) => void) : this {
     if (!this.handled) {
       callback(this.currentError);
       this.markHandled();
